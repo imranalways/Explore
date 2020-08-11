@@ -1,0 +1,73 @@
+body{
+	margin:0;
+	height:100%;
+	
+}
+
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../Photo/home.jpg);
+	height:100vh;
+	width:100%;
+	background-position: center;
+	background-size: cover;
+	
+}
+
+ul{
+	float:left;
+	list-style-type:none;
+	margin-left:32%;
+	margin-top: 25%;
+	
+
+	
+}
+
+ul li{
+	display:inline-block;
+}
+
+ul li a{
+	text-decoration:none;
+	color:red;
+	padding: 5px 20px;
+	border: 1px solid white;
+	transition: .8s ease;
+	font-family:Century Gothic
+}
+
+ul li a:hover{
+	background-color:white;
+	color:black;
+	
+}
+
+
+.imgs img{
+	margin-top:270px;
+	left:44%;
+	position:absolute;
+	
+	height:150px;
+	width:150px;
+	border-radius:100%;
+	display: inline-block;
+}
+
+
+
+.imgs img:hover {
+	
+  animation: rotate-btn .8s linear 100;
+  -webkit-animation: rotate-btn .8s linear 100;
+  
+}
+
+@keyframes rotate-btn {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
