@@ -9,9 +9,12 @@
 		  
 			$(".box").slideDown("slow");
 			$(".disc").slideDown("slow");
+			$(".backBtn").slideDown("slow");
+			
 			
 			$(".summer").click(function(){
-			$(".story").fadeOut("slow");
+			$(".story").hide();
+			$(".loc").hide();
 			$("#div1").fadeToggle();
 			$("#div2").fadeToggle("slow");
 			$("#div3").fadeToggle(2000);
@@ -19,27 +22,125 @@
 			$("#div1").animate({opacity:.5});
 			$("#div2").animate({opacity:.5});
 			$("#div3").animate({opacity:.5});
+			
 			});
 			
 			$("#div1").click(function(){
-			$("#div1").animate({opacity:.8});
+			$("img").slideUp("slow");
+			$(".dloc").fadeOut("slow");
+			$(".sundar").fadeOut("slow");
+			$(".coxs").fadeOut("slow");
+			$(".chittagong").fadeOut("slow");
+			$(".sundar").fadeOut("slow");
+			$(".sundarban,.cox,.chit,.srima,.ranga,.st,.sylhet,.sonar,.mosque,.pahar").fadeIn("slow");
+			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeOut("slow");
+			$(".loc").slideUp("slow");
+			$("#div1").animate({opacity:.8,marginTop:"-10%"},400);
+			$("#div2").animate({opacity:.5,marginTop:"-10%"},700);
+			$("#div3").animate({opacity:.5,marginTop:"-10%"},1000,function(){
 			$(".story").slideToggle("slow");
-			$("#div2").animate({opacity:.5});
-			$("#div3").animate({opacity:.5});
+			$(".homeBtn").fadeIn("slow");
+			$(".backBtn").fadeOut("slow");
+			
 			});
+			
+			});
+			
 			$("#div2").click(function(){
-			$("#div1").animate({opacity:.5});
-			$("#div3").animate({opacity:.5});
+			
+			
 			$(".story").slideUp("slow");
-			$("#div2").animate({opacity:.9});
+			$(".loc").slideUp("slow");
+			$(".dloc").fadeOut("slow");
+			$(".sundar").fadeOut("slow");
+			$(".chittagong").fadeOut("slow");
+			$(".backBtn").fadeOut("slow");
+			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeOut("slow");
+			$(".coxs").fadeOut("slow");
+			$(".sundar").fadeOut("slow");
+			$("#div1").animate({opacity:.5,marginTop:"-10%"},400);
+			$("#div2").animate({opacity:.8,marginTop:"-10%"},700);
+			$("#div3").animate({opacity:.5,marginTop:"-10%"},1000,function(){
+			
+			$("img").slideToggle("slow");
+			$(".homeBtn").fadeIn("slow");
+			
+			});
+			
+			
 			});
 			
 			$("#div3").click(function(){
-			$("#div1").animate({opacity:.5});
-			$("#div2").animate({opacity:.5});
 			$(".story").slideUp("slow");
-			$("#div3").animate({opacity:.8});
+			$("img").slideUp("slow");
+			$(".backBtn").fadeOut("slow");
+			$(".sundar").fadeOut("slow");
+			$(".coxs").fadeOut("slow");
+			$(".chittagong").fadeOut("slow");
+			$(".sundarban,.cox,.chit,.srima,.ranga,.st,.sylhet,.sonar,.mosque,.pahar").animate({opacity:1});
+			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeOut("slow");
+			
+			$(".sundar").fadeOut("slow");
+			$("#div1").animate({opacity:.5,marginTop:"-10%"},400);
+			$("#div2").animate({opacity:.5,marginTop:"-10%"},700);
+			$("#div3").animate({opacity:.8,marginTop:"-10%"},1000,function(){
+			
+			$(".dloc").fadeToggle("slow");
+			$(".homeBtn").fadeIn("slow");
+			
 			});
+			
+			});
+			
+			$(".homeBtn").click(function(){
+			
+			$(".story").slideUp("fast");
+			$(".sundar").fadeOut("slow");
+			$(".coxs").fadeOut("slow");
+			$(".chittagong").fadeOut("slow");
+			$("#div1").animate({opacity:.5,marginTop:"0%"},400);
+			$("#div2").animate({opacity:.5,marginTop:"0%"},800);
+			$("#div3").animate({opacity:.5,marginTop:"0%"},1000);
+			$("img").slideUp("fast");
+			$(".sundarban,.cox,.chit,.srima,.ranga,.st,.sylhet,.sonar,.mosque,.pahar").animate({opacity:1});
+			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeIn("slow");
+			$(".dloc").fadeOut("fast");
+			$(".homeBtn").fadeOut("slow");
+			$(".backBtn").fadeIn("slow");
+			
+			
+			});
+			
+			
+			$(".sundarban").click(function(){
+			$(".sundarban").animate({opacity:1});
+			$(".cox,.chit,.srima,.ranga,.st,.sylhet,.sonar,.mosque,.pahar").animate({opacity:.5});
+			$(".chittagong").hide("slow");
+			$(".coxs").fadeOut("slow",function(){
+			$(".sundar").slideToggle("slow");
+			});
+			});
+			
+			$(".cox").click(function(){
+			$(".cox").animate({opacity:1});
+			$(".sundarban,.chit,.srima,.ranga,.st,.sylhet,.sonar,.mosque,.pahar").animate({opacity:.5});
+			$(".chittagong").hide("slow");
+			$(".sundar").fadeOut("slow",function(){
+			$(".coxs").slideToggle("slow");
+			});
+			});
+			
+			$(".chit").click(function(){
+			$(".chit").animate({opacity:1});
+			$(".sundarban,.cox,.srima,.ranga,.st,.sylhet,.sonar,.mosque,.pahar").animate({opacity:.5});
+			$(".coxs").hide("slow");
+			$(".sundar").fadeOut("slow",function(){
+			$(".chittagong").slideToggle("slow");
+			});
+			});
+			
+			
+			
 			
 		});
 </script>
@@ -49,16 +150,24 @@
 		<header>
 			
 			
+		
+								<ul>
+								<li class="homeBtn" style="display:none;position:absolute;top:18%;left:5%;"><a href="#">Home</a></li>
+								</ul>
+								
+			
+			
 			<div class="box" style="background:black;height:100px;width:100%;opacity:.5;display:none;">
 			<center style="opacity:10;color:red;font-size:25px;"><br><b>Live In Peace In Nature<b></center></div>
 			<div class="box" style="background:none;height:100px;width:100%;display:none;">
 							<center><ul>
 								<li class="summer"><a href="#">Summer</a></li> &nbsp
-								<li class="autumn"><a href="#">Rainy</a></li> &nbsp
-								<li class="lateautumn"><a href="#">Autumn</a></li> &nbsp
-								<li class="spring"><a href="#">Late Autumn</a></li> &nbsp
-								<li class="fall"><a href="#">Winter</a></li> &nbsp
-								<li class="winter"><a href="#">Spring</a></li> 
+								<li class="rainy"><a href="#">Rainy</a></li> &nbsp
+								<li class="autumn"><a href="#">Autumn</a></li> &nbsp
+								<li class="lateautumn"><a href="#">Late Autumn</a></li> &nbsp
+								<li class="winter"><a href="#">Winter</a></li> &nbsp
+								<li class="spring"><a href="#">Spring</a></li> 
+								<li class="backBtn" style="display:none;position:absolute;top:18%;left:90%;"><a href="index.html">Back</a></li>
 							</ul></center>
 							
 			
@@ -82,8 +191,89 @@
 			<div id="div3" style="width:200px;height:200px;opacity:.6;background-color:blue;display:inline;float:left;display:none;">
 			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Location</center></div>
 			
+			
+			<div class="dloc" style="background:none;height:100px;width:100%;display:none;">
+				<br> <br> <br> <br> 
+							<ul>
+								<li class="sundarban"><a href="#">Sundarban</a></li> &nbsp
+								<li class="cox"><a href="#">Cox's Bazar</a></li> &nbsp
+								<li class="chit"><a href="#">Chittagong Hill Tracts</a></li> &nbsp
+								<li class="srima"><a href="#">Srimangal</a></li> &nbsp
+								<li class="ranga"><a href="#">Rangamati</a></li> &nbsp
+								<li class="st"><a href="#">St Martin Island</a></li> &nbsp
+								<li class="sylhet"><a href="#">Sylhet</a></li> &nbsp 
+								<li class="sonar"><a href="#">Sonargaon</a></li> &nbsp
+								<br> <br> <br>
+								<li class="mosque"><a href="#">Mosque City Bagerhat</a></li> &nbsp
+								<li class="pahar"><a href="#">Paharpur</a></li> 
+							</ul>
+							
+			
+			</div>
+			
+			
+			
+			
+			<br> <br> <br> <br>  
+			<div class="story" style="margin-left:10%;margin-right:10%;margin-top:20px;width:80%;padding:10px;border: 2px solid white;color:white;display:none;">
+				<center style="font-family:Arial;font-size:15px;text-align: justify;text-justify: inter-word;">Bangladesh is a land of six seasons and a land of beauties. The summer is the first season that lasts for Baishakh and Jaisthya. 
+				It is the hottest and tiring season. It appears with Fruits and flowers but is accompanied with dusty storm that sometimes causes much 
+				harm to men animals and plants. It sometimes blows away trees and houses and sometimes causes death to men and animals. During this season,
+				the earth comes nearer to the sun and gets heat and light. The day becomes longer than the night. As a result the earth becomes so hot that
+				man cannot bear the heat. The rivers, ponds, canals ad pools dry up. People sweat and get thirst and triad out of extremes heat. Sometimes
+				strong north-east storm blows away trees and roofs of our houses. Sometimes it causes death to away men ad animals; so, it is called kal-baishakhi.
+				The summer is the season of fruits and flowers. Mangoes, Jackfruits, black-berries, litchis, melons and many other juicy-fruits grow in this season.
+				Various kinds of flowers also blossom in this time. And various kids of another fruits ripen. The boy’s gifts enjoyed the summer holidays.
+				In this season people suffer for want of water. Any diseases like cholera small pox and measles break out. I addition to these, men, animals,
+				ad plants fall a victim to storm ad cyclones. Sometimes drought destroys crops. Despite of its defects this season makes soil soft for easy cultivation. 
+				It grows us plenty of fruits and flowers. So, we welcomed it.</center>
+				
+			</div>
+			 
+			<div class="sundar" style="margin-left:10%;margin-right:10%;margin-top:20px;width:80%;padding:10px;border: 2px solid white;color:white;display:none;">
+				<center style="font-family:Arial;font-size:15px;text-align: justify;text-justify: inter-word;">
+				Sundarbans is the largest mangrove forest on earth and a UNESCO world heritage site.Sundarbans is located in between two neighbouring countries
+				Bangladesh and India.Majority of the forest is located in Bangladesh.It is home of the last remaining Bengal tigers in the world and much other wildlife.
+				Every year many tourists come Bangladesh to visit Sundarbans.Its beauty attracts all people accross the world.The environment of Sundarbans is 
+				tranquilizing and visiting this forest could be a once in a lifetime experience.
+				</center>
+				
+			</div>
+			
+			<div class="coxs" style="margin-left:10%;margin-right:10%;margin-top:20px;width:80%;padding:10px;border: 2px solid white;color:white;display:none;">
+				<center style="font-family:Arial;font-size:15px;text-align: justify;text-justify: inter-word;">
+				Cox's Bazar is the longest unbroken sandy beach in the world,125 km in lengrh.It is the most popular tourist spot among the locals and foreigners.
+				Perfect place to relax at the end of a long trip.To avoid the crowd,stay on a resort with their own private beach.The Wholesale Fish Market in Cox's
+				Bazar would be an interesting place to visit while you are here.
+				</center>
+				
+			</div>
+			
+			<div class="chittagong" style="margin-left:10%;margin-right:10%;margin-top:20px;width:80%;padding:10px;border: 2px solid white;color:white;display:none;">
+				<center style="font-family:Arial;font-size:15px;text-align: justify;text-justify: inter-word;">
+				Chittagong Hill Tracts area us a naturally beautiful place full of beautiful hills.It is home of many tribal groups of Bangladesh.This is the best place
+				in Bangladesh for adventure travel.You can trek deep inside the hills for many days here if you can manage permission from the local authority.Also
+				you can meet different tribal groups in this region and see their lifestyles.The most beautiful river in Bangladesh called Sangu river is located in
+				 this area.A boat ride in Sangu during monsson could be a great experience.
+				</center>
+				
+			</div>
+			
+			
 			<br> <br> <br> <br>
-			<div class="story" style="margin:10%;margin-bottom:20px;width:1100px;height:100px;padding:5px;border: 1px solid white;color:white;display:none;">
+			<div style="margin-top:3%;margin-left:70px;">
+			<img class="s1" src="Photo/s1.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			<img class="s2" src="Photo/s2.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			<img class="s3" src="Photo/s3.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			<img class="s4" src="Photo/s4.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			<img class="s5" src="Photo/s5.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			</div>
+			
+			
+
+			<!--
+			
+			<div class="loc" style="margin:10%;margin-bottom:20px;width:80%;height:100px;padding:5px;border: 1px solid white;color:white;display:none;">
 				<center>Summer is the first season in Bangladesh.This season consists with two bengali months named Baishak and Jaisthow.
 				During summer season,The atmosphare remains hot and shiny.People can't do much work and become tired due to extreme heat of sun.
 				Similarly crops fields become drought for less rain.</center>
@@ -91,10 +281,8 @@
 			</div>
 			
 			
-
-			<!--
 			
-											<center>
+				<center>
 								<div  style="display:none;">
 								<ul>
 								<li class="btn">Story</li>
