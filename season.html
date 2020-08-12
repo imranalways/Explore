@@ -13,20 +13,30 @@
 			
 			
 			$(".summer").click(function(){
-			$(".story").hide();
-			$(".loc").hide();
+			
+			
+			$(".disc").slideUp("slow");
+			
+			
+			$("#div4").animate({opacity:0});
+			$("#div5").animate({opacity:0});
+			$("#div4").fadeOut();
+			$("#div5").fadeOut();
+			$("#div6").fadeOut();
+			$("#div6").animate({opacity:0},function(){
+			
 			$("#div1").fadeToggle();
 			$("#div2").fadeToggle("slow");
 			$("#div3").fadeToggle(2000);
-			$(".disc").slideToggle("slow");
+			});
 			$("#div1").animate({opacity:.5});
 			$("#div2").animate({opacity:.5});
 			$("#div3").animate({opacity:.5});
-			
 			});
 			
+			
 			$("#div1").click(function(){
-			$("img").slideUp("slow");
+			$(".s").slideUp("slow");
 			$(".dloc").fadeOut("slow");
 			$(".sundar").fadeOut("slow");
 			$(".coxs").fadeOut("slow");
@@ -47,8 +57,6 @@
 			});
 			
 			$("#div2").click(function(){
-			
-			
 			$(".story").slideUp("slow");
 			$(".loc").slideUp("slow");
 			$(".dloc").fadeOut("slow");
@@ -62,7 +70,7 @@
 			$("#div2").animate({opacity:.8,marginTop:"-10%"},700);
 			$("#div3").animate({opacity:.5,marginTop:"-10%"},1000,function(){
 			
-			$("img").slideToggle("slow");
+			$(".s").slideToggle("slow");
 			$(".homeBtn").fadeIn("slow");
 			
 			});
@@ -72,7 +80,7 @@
 			
 			$("#div3").click(function(){
 			$(".story").slideUp("slow");
-			$("img").slideUp("slow");
+			$(".s").slideUp("slow");
 			$(".backBtn").fadeOut("slow");
 			$(".sundar").fadeOut("slow");
 			$(".coxs").fadeOut("slow");
@@ -101,7 +109,7 @@
 			$("#div1").animate({opacity:.5,marginTop:"0%"},400);
 			$("#div2").animate({opacity:.5,marginTop:"0%"},800);
 			$("#div3").animate({opacity:.5,marginTop:"0%"},1000);
-			$("img").slideUp("fast");
+			$(".s").slideUp("fast");
 			$(".sundarban,.cox,.chit,.srima,.ranga,.st,.sylhet,.sonar,.mosque,.pahar").animate({opacity:1});
 			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeIn("slow");
 			$(".dloc").fadeOut("fast");
@@ -138,6 +146,124 @@
 			$(".chittagong").slideToggle("slow");
 			});
 			});
+			
+			
+			
+			
+			
+			
+			$(".rainy").click(function(){
+			$(".story2").hide();
+			
+			$(".disc").slideUp("slow");
+			
+			$("#div1").animate({opacity:0});
+			$("#div2").animate({opacity:0});
+			$("#div1").fadeOut();
+			$("#div2").fadeOut();
+			$("#div3").fadeOut();
+			$("#div3").animate({opacity:0},function(){
+			
+			$("#div4").slideToggle();
+			$("#div5").slideToggle("slow");
+			$("#div6").slideToggle(1500);
+			});
+			
+			$("#div4").animate({opacity:.5});
+			$("#div5").animate({opacity:.5});
+			$("#div6").animate({opacity:.5});
+			
+			});
+			
+			
+			
+			$("#div4").click(function(){
+			$(".r").slideUp("slow");
+			$(".dloc").fadeOut("slow");
+			$(".sundar").fadeOut("slow");
+			$(".coxs").fadeOut("slow");
+			$(".chittagong").fadeOut("slow");
+			$(".sundar").fadeOut("slow");
+			$(".sundarban,.cox,.chit,.srima,.ranga,.st,.sylhet,.sonar,.mosque,.pahar").fadeIn("slow");
+			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeOut("slow");
+			$(".loc").slideUp("slow");
+			$("#div4").animate({opacity:.8,marginTop:"-10%"},400);
+			$("#div5").animate({opacity:.5,marginTop:"-10%"},700);
+			$("#div6").animate({opacity:.5,marginTop:"-10%"},1000,function(){
+			$(".story2").slideToggle("slow");
+			$(".homeBtn").fadeIn("slow");
+			$(".backBtn").fadeOut("slow");
+			});
+			});
+			
+			
+			$("#div5").click(function(){
+			$(".story2").slideUp("slow");
+			$(".loc").slideUp("slow");
+			$(".dloc").fadeOut("slow");
+			$(".sundar").fadeOut("slow");
+			$(".chittagong").fadeOut("slow");
+			$(".backBtn").fadeOut("slow");
+			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeOut("slow");
+			$(".coxs").fadeOut("slow");
+			$(".sundar").fadeOut("slow");
+			$("#div4").animate({opacity:.5,marginTop:"-10%"},400);
+			$("#div5").animate({opacity:.8,marginTop:"-10%"},700);
+			$("#div6").animate({opacity:.5,marginTop:"-10%"},1000,function(){
+			
+			$(".r").slideToggle("slow");
+			$(".homeBtn").fadeIn("slow");
+			
+			});
+			
+			
+			});
+			
+			$("#div6").click(function(){
+			$(".story2").slideUp("slow");
+			$(".r").slideUp("slow");
+			$(".backBtn").fadeOut("slow");
+			$(".sundar").fadeOut("slow");
+			$(".coxs").fadeOut("slow");
+			$(".chittagong").fadeOut("slow");
+			$(".sundarban,.cox,.chit,.srima,.ranga,.st,.sylhet,.sonar,.mosque,.pahar").animate({opacity:1});
+			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeOut("slow");
+			
+			$(".sundar").fadeOut("slow");
+			$("#div4").animate({opacity:.5,marginTop:"-10%"},400);
+			$("#div5").animate({opacity:.5,marginTop:"-10%"},700);
+			$("#div6").animate({opacity:.8,marginTop:"-10%"},1000,function(){
+			
+			$(".dloc").fadeToggle("slow");
+			$(".homeBtn").fadeIn("slow");
+			
+			});
+			
+			});
+			
+			$(".homeBtn").click(function(){
+			
+			$(".story2").slideUp("fast");
+			$(".sundar").fadeOut("slow");
+			$(".coxs").fadeOut("slow");
+			$(".chittagong").fadeOut("slow");
+			$("#div4").animate({opacity:.5,marginTop:"0%"},400);
+			$("#div5").animate({opacity:.5,marginTop:"0%"},800);
+			$("#div6").animate({opacity:.5,marginTop:"0%"},1000);
+			$(".r").slideUp("fast");
+			$(".sundarban,.cox,.chit,.srima,.ranga,.st,.sylhet,.sonar,.mosque,.pahar").animate({opacity:1});
+			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeIn("slow");
+			$(".dloc").fadeOut("fast");
+			$(".homeBtn").fadeOut("slow");
+			$(".backBtn").fadeIn("slow");
+			
+			
+			});
+			
+			
+
+			
+			
 			
 			
 			
@@ -192,6 +318,14 @@
 			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Location</center></div>
 			
 			
+			<div id="div4" style="margin-left:30%;margin-right:30px;width:200px;height:200px;opacity:.6;background-color:#3173de;display:inline;float:left;display:none;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Story</center></div> 
+			<div id="div5" style="margin-right:30px;width:200px;height:200px;opacity:.6;background-color:#a027c4;display:inline;float:left;display:none;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Photo</center></div>
+			<div id="div6" style="width:200px;height:200px;opacity:.6;background-color:#b32464;display:inline;float:left;display:none;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Location</center></div>
+			
+			
 			<div class="dloc" style="background:none;height:100px;width:100%;display:none;">
 				<br> <br> <br> <br> 
 							<ul>
@@ -229,6 +363,18 @@
 				It grows us plenty of fruits and flowers. So, we welcomed it.</center>
 				
 			</div>
+			
+			<div class="story2" style="margin-left:10%;margin-right:10%;margin-top:20px;width:80%;padding:10px;border: 2px solid white;color:white;display:none;">
+				<center style="font-family:Arial;font-size:15px;text-align: justify;text-justify: inter-word;">
+				Of the six seasons in Bangladesh the rainy season is the most important due to its contribution towards our agriculture. It is also a very beautiful season. 
+				It comes just after the summer. During the rainy season, the sky remains covered with clouds most of the time. Thunderstorms are very frequent.
+				Due to the heavy and incessant rainfalls, wells, ponds, rivers, canals, “lakes, etc. become full to the brim. Lowlands go underwater and look like a sea.
+				The rainy season is very important for our agriculture. It does a lot of good for us. Farmers anxiously wait for the rain as cultivation depends on rain. 
+				Without rain, the fields cannot be plowed. Much rain is necessary for growing paddy and jute. Everything becomes full of water and the scarcity of water is no longer felt. 
+				This season is vital for the growth of vegetation. Hence, we can say that the vast greenery of Bangladesh is the bounty of the rainy season.
+				</center>
+				
+			</div>
 			 
 			<div class="sundar" style="margin-left:10%;margin-right:10%;margin-top:20px;width:80%;padding:10px;border: 2px solid white;color:white;display:none;">
 				<center style="font-family:Arial;font-size:15px;text-align: justify;text-justify: inter-word;">
@@ -262,11 +408,19 @@
 			
 			<br> <br> <br> <br>
 			<div style="margin-top:3%;margin-left:70px;">
-			<img class="s1" src="Photo/s1.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
-			<img class="s2" src="Photo/s2.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
-			<img class="s3" src="Photo/s3.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
-			<img class="s4" src="Photo/s4.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
-			<img class="s5" src="Photo/s5.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			<img class="s" src="Photo/s1.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			<img class="s" src="Photo/s2.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			<img class="s" src="Photo/s3.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			<img class="s" src="Photo/s4.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			<img class="s" src="Photo/s5.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			</div>
+			
+			<div style="margin-top:3%;margin-left:70px;">
+			<img class="r" src="Photo/r1.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			<img class="r" src="Photo/r2.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			<img class="r" src="Photo/r3.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			<img class="r" src="Photo/r4.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			<img class="r" src="Photo/r5.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
 			</div>
 			
 			
