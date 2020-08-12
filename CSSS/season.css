@@ -16,6 +16,7 @@ ul{
 	
 	list-style-type:none;
 	margin-left:5%;
+	margin-right:5%;
 	
 }
 ul li{
@@ -33,4 +34,11 @@ ul li a{
 ul li a:hover{
 	background-color: white;
 	color:black;
+}
+
+
+
+img:hover{
+  transform: scale(1.5,1.5);
+  transition: transform 3s;
 }
