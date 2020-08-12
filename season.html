@@ -9,19 +9,36 @@
 		  
 			$(".box").slideDown("slow");
 			$(".disc").slideDown("slow");
-			$(".summer").click(function(){
 			
+			$(".summer").click(function(){
+			$(".story").fadeOut("slow");
 			$("#div1").fadeToggle();
 			$("#div2").fadeToggle("slow");
 			$("#div3").fadeToggle(2000);
 			$(".disc").slideToggle("slow");
+			$("#div1").animate({opacity:.5});
+			$("#div2").animate({opacity:.5});
+			$("#div3").animate({opacity:.5});
 			});
-			$("#div1").click(function(){
-			$("#div1").slideUp();
-			$("#div2").slideUp(50);
-			$("#div3").slideUp(100);
-			$(".disc").slideDown("slow");
 			
+			$("#div1").click(function(){
+			$("#div1").animate({opacity:.8});
+			$(".story").slideToggle("slow");
+			$("#div2").animate({opacity:.5});
+			$("#div3").animate({opacity:.5});
+			});
+			$("#div2").click(function(){
+			$("#div1").animate({opacity:.5});
+			$("#div3").animate({opacity:.5});
+			$(".story").slideUp("slow");
+			$("#div2").animate({opacity:.9});
+			});
+			
+			$("#div3").click(function(){
+			$("#div1").animate({opacity:.5});
+			$("#div2").animate({opacity:.5});
+			$(".story").slideUp("slow");
+			$("#div3").animate({opacity:.8});
 			});
 			
 		});
@@ -64,6 +81,14 @@
 			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Photo</center></div>
 			<div id="div3" style="width:200px;height:200px;opacity:.6;background-color:blue;display:inline;float:left;display:none;">
 			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Location</center></div>
+			
+			<br> <br> <br> <br>
+			<div class="story" style="margin:10%;margin-bottom:20px;width:1100px;height:100px;padding:5px;border: 1px solid white;color:white;display:none;">
+				<center>Summer is the first season in Bangladesh.This season consists with two bengali months named Baishak and Jaisthow.
+				During summer season,The atmosphare remains hot and shiny.People can't do much work and become tired due to extreme heat of sun.
+				Similarly crops fields become drought for less rain.</center>
+				
+			</div>
 			
 			
 
