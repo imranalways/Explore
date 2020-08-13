@@ -12,19 +12,23 @@
 			$(".backBtn").slideDown("slow");
 			
 			
+			//################################### SUMMER ############################
+			
+			
 			$(".summer").click(function(){
-			
-			
 			$(".disc").slideUp("slow");
+			$("#div4").animate({opacity:0});$("#div5").animate({opacity:0});$("#div6").animate({opacity:0});
+			$("#div7").animate({opacity:0});$("#div8").animate({opacity:0});
+			$("#div10").animate({opacity:0});$("#div11").animate({opacity:0});$("#div12").animate({opacity:0});
+			$("#div13").animate({opacity:0});$("#div14").animate({opacity:0});$("#div15").animate({opacity:0});
+			$("#div16").animate({opacity:0});$("#div17").animate({opacity:0});$("#div18").animate({opacity:0});
+			$("#div4").fadeOut();$("#div5").fadeOut();$("#div6").fadeOut();
+			$("#div7").fadeOut();$("#div8").fadeOut();$("#div9").fadeOut();
+			$("#div10").fadeOut();$("#div11").fadeOut();$("#div12").fadeOut();
+			$("#div13").fadeOut();$("#div14").fadeOut();$("#div15").fadeOut();
+			$("#div16").fadeOut();$("#div17").fadeOut();$("#div18").fadeOut();
 			
-			
-			$("#div4").animate({opacity:0});
-			$("#div5").animate({opacity:0});
-			$("#div4").fadeOut();
-			$("#div5").fadeOut();
-			$("#div6").fadeOut();
-			$("#div6").animate({opacity:0},function(){
-			
+			$("#div9").animate({opacity:0},function(){
 			$("#div1").fadeToggle();
 			$("#div2").fadeToggle("slow");
 			$("#div3").fadeToggle(2000);
@@ -38,10 +42,19 @@
 			$("#div1").click(function(){
 			$(".s").slideUp("slow");
 			$(".dloc").fadeOut("slow");
+			$("#owner").fadeOut("slow");
 			$(".sundar").fadeOut("slow");
 			$(".coxs").fadeOut("slow");
 			$(".chittagong").fadeOut("slow");
-			$(".sundar").fadeOut("slow");
+			$(".srimangal").fadeOut("slow");
+			$(".rangamati").fadeOut("slow");
+			$(".martin").fadeOut("slow");
+			$(".syl").fadeOut("slow");
+			$(".son").fadeOut("slow");
+			$(".mos").fadeOut("slow");
+			$(".pah").fadeOut("slow");
+			
+			
 			$(".sundarban,.cox,.chit,.srima,.ranga,.st,.sylhet,.sonar,.mosque,.pahar").fadeIn("slow");
 			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeOut("slow");
 			$(".loc").slideUp("slow");
@@ -60,8 +73,19 @@
 			$(".story").slideUp("slow");
 			$(".loc").slideUp("slow");
 			$(".dloc").fadeOut("slow");
+			$("#owner").fadeOut("slow");
 			$(".sundar").fadeOut("slow");
+			$(".coxs").fadeOut("slow");
 			$(".chittagong").fadeOut("slow");
+			$(".srimangal").fadeOut("slow");
+			$(".rangamati").fadeOut("slow");
+			$(".martin").fadeOut("slow");
+			$(".syl").fadeOut("slow");
+			$(".son").fadeOut("slow");
+			$(".mos").fadeOut("slow");
+			$(".pah").fadeOut("slow");
+			
+			
 			$(".backBtn").fadeOut("slow");
 			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeOut("slow");
 			$(".coxs").fadeOut("slow");
@@ -82,9 +106,19 @@
 			$(".story").slideUp("slow");
 			$(".s").slideUp("slow");
 			$(".backBtn").fadeOut("slow");
+			$("#owner").fadeOut("slow");
 			$(".sundar").fadeOut("slow");
 			$(".coxs").fadeOut("slow");
 			$(".chittagong").fadeOut("slow");
+			$(".srimangal").fadeOut("slow");
+			$(".rangamati").fadeOut("slow");
+			$(".martin").fadeOut("slow");
+			$(".syl").fadeOut("slow");
+			$(".son").fadeOut("slow");
+			$(".mos").fadeOut("slow");
+			$(".pah").fadeOut("slow");
+			
+			
 			$(".sundarban,.cox,.chit,.srima,.ranga,.st,.sylhet,.sonar,.mosque,.pahar").animate({opacity:1});
 			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeOut("slow");
 			
@@ -106,6 +140,14 @@
 			$(".sundar").fadeOut("slow");
 			$(".coxs").fadeOut("slow");
 			$(".chittagong").fadeOut("slow");
+			$(".srimangal").fadeOut("slow");
+			$(".rangamati").fadeOut("slow");
+			$(".martin").fadeOut("slow");
+			$(".syl").fadeOut("slow");
+			$(".son").fadeOut("slow");
+			$(".mos").fadeOut("slow");
+			$(".pah").fadeOut("slow");
+			
 			$("#div1").animate({opacity:.5,marginTop:"0%"},400);
 			$("#div2").animate({opacity:.5,marginTop:"0%"},800);
 			$("#div3").animate({opacity:.5,marginTop:"0%"},1000);
@@ -114,16 +156,28 @@
 			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeIn("slow");
 			$(".dloc").fadeOut("fast");
 			$(".homeBtn").fadeOut("slow");
-			$(".backBtn").fadeIn("slow");
-			
-			
+			$(".backBtn").fadeIn(1000,function(){
+			$("#owner").fadeIn("slow");
 			});
 			
+			});
+			//################################### END OF SUMMER ############################
+			
+			
+			//################################### LOCATIONS ############################
 			
 			$(".sundarban").click(function(){
 			$(".sundarban").animate({opacity:1});
 			$(".cox,.chit,.srima,.ranga,.st,.sylhet,.sonar,.mosque,.pahar").animate({opacity:.5});
 			$(".chittagong").hide("slow");
+			$(".rangamati").hide("slow");
+			$(".srimangal").hide("slow");
+			$(".martin").hide("slow");
+			$(".syl").hide("slow");
+			$(".son").hide("slow");
+			$(".mos").hide("slow");
+			$(".pah").hide("slow");
+			
 			$(".coxs").fadeOut("slow",function(){
 			$(".sundar").slideToggle("slow");
 			});
@@ -133,6 +187,14 @@
 			$(".cox").animate({opacity:1});
 			$(".sundarban,.chit,.srima,.ranga,.st,.sylhet,.sonar,.mosque,.pahar").animate({opacity:.5});
 			$(".chittagong").hide("slow");
+			$(".rangamati").hide("slow");
+			$(".srimangal").hide("slow");
+			$(".martin").hide("slow");
+			$(".syl").hide("slow");
+			$(".son").hide("slow");
+			$(".mos").hide("slow");
+			$(".pah").hide("slow");
+			
 			$(".sundar").fadeOut("slow",function(){
 			$(".coxs").slideToggle("slow");
 			});
@@ -142,27 +204,160 @@
 			$(".chit").animate({opacity:1});
 			$(".sundarban,.cox,.srima,.ranga,.st,.sylhet,.sonar,.mosque,.pahar").animate({opacity:.5});
 			$(".coxs").hide("slow");
+			$(".rangamati").hide("slow");
+			$(".srimangal").hide("slow");
+			$(".martin").hide("slow");
+			$(".syl").hide("slow");
+			$(".son").hide("slow");
+			$(".mos").hide("slow");
+			$(".pah").hide("slow");
+			
 			$(".sundar").fadeOut("slow",function(){
 			$(".chittagong").slideToggle("slow");
 			});
 			});
 			
+			$(".srima").click(function(){
+			$(".srima").animate({opacity:1});
+			$(".sundarban,.cox,.chit,.ranga,.st,.sylhet,.sonar,.mosque,.pahar").animate({opacity:.5});
+			$(".coxs").hide("slow");
+			$(".rangamati").hide("slow");
+			$(".chittagong").hide("slow");
+			$(".martin").hide("slow");
+			$(".syl").hide("slow");
+			$(".son").hide("slow");
+			$(".mos").hide("slow");
+			$(".pah").hide("slow");
+			
+			$(".sundar").fadeOut("slow",function(){
+			$(".srimangal").slideToggle("slow");
+			});
+			});
+			
+			$(".ranga").click(function(){
+			$(".ranga").animate({opacity:1});
+			$(".sundarban,.cox,.chit,.srima,.st,.sylhet,.sonar,.mosque,.pahar").animate({opacity:.5});
+			$(".coxs").hide("slow");
+			$(".srimangal").hide("slow");
+			$(".chittagong").hide("slow");
+			$(".martin").hide("slow");
+			$(".syl").hide("slow");
+			$(".son").hide("slow");
+			$(".mos").hide("slow");
+			$(".pah").hide("slow");
+			
+			$(".sundar").fadeOut("slow",function(){
+			$(".rangamati").slideToggle("slow");
+			});
+			});
+			
+			$(".st").click(function(){
+			$(".st").animate({opacity:1});
+			$(".sundarban,.cox,.chit,.srima,.ranga,.sylhet,.sonar,.mosque,.pahar").animate({opacity:.5});
+			$(".coxs").hide("slow");
+			$(".srimangal").hide("slow");
+			$(".chittagong").hide("slow");
+			$(".rangamati").hide("slow");
+			$(".syl").hide("slow");
+			$(".son").hide("slow");
+			$(".mos").hide("slow");
+			$(".pah").hide("slow");
+			
+			$(".sundar").fadeOut("slow",function(){
+			$(".martin").slideToggle("slow");
+			});
+			});
+			
+			
+			$(".sylhet").click(function(){
+			$(".sylhet").animate({opacity:1});
+			$(".sundarban,.cox,.chit,.srima,.ranga,.st,.sonar,.mosque,.pahar").animate({opacity:.5});
+			$(".coxs").hide("slow");
+			$(".srimangal").hide("slow");
+			$(".chittagong").hide("slow");
+			$(".rangamati").hide("slow");
+			$(".martin").hide("slow");
+			$(".son").hide("slow");
+			$(".mos").hide("slow");
+			$(".pah").hide("slow");
+			
+			$(".sundar").fadeOut("slow",function(){
+			$(".syl").slideToggle("slow");
+			});
+			});
+			
+			$(".sonar").click(function(){
+			$(".sonar").animate({opacity:1});
+			$(".sundarban,.cox,.chit,.srima,.ranga,.st,.sylhet,.mosque,.pahar").animate({opacity:.5});
+			$(".coxs").hide("slow");
+			$(".srimangal").hide("slow");
+			$(".chittagong").hide("slow");
+			$(".rangamati").hide("slow");
+			$(".martin").hide("slow");
+			$(".syl").hide("slow");
+			$(".mos").hide("slow");
+			$(".pah").hide("slow");
+			
+			$(".sundar").fadeOut("slow",function(){
+			$(".son").slideToggle("slow");
+			});
+			});
+			
+			$(".mosque").click(function(){
+			$(".mosque").animate({opacity:1});
+			$(".sundarban,.cox,.chit,.srima,.ranga,.st,.sylhet,.sonar,.pahar").animate({opacity:.5});
+			$(".coxs").hide("slow");
+			$(".srimangal").hide("slow");
+			$(".chittagong").hide("slow");
+			$(".rangamati").hide("slow");
+			$(".martin").hide("slow");
+			$(".syl").hide("slow");
+			$(".son").hide("slow");
+			$(".pah").hide("slow");
+			
+			$(".sundar").fadeOut("slow",function(){
+			$(".mos").slideToggle("slow");
+			});
+			});
+			
+			$(".pahar").click(function(){
+			$(".pahar").animate({opacity:1});
+			$(".sundarban,.cox,.chit,.srima,.ranga,.st,.sylhet,.sonar,.mosque").animate({opacity:.5});
+			$(".coxs").hide("slow");
+			$(".srimangal").hide("slow");
+			$(".chittagong").hide("slow");
+			$(".rangamati").hide("slow");
+			$(".martin").hide("slow");
+			$(".syl").hide("slow");
+			$(".son").hide("slow");
+			$(".mos").hide("slow");
+			$(".sundar").fadeOut("slow",function(){
+			$(".pah").slideToggle("slow");
+			});
+			});
+			
+			//################################### END OF LOCATION ############################
 			
 			
 			
 			
+			
+			//################################### RAINY ############################
 			
 			$(".rainy").click(function(){
 			$(".story2").hide();
-			
 			$(".disc").slideUp("slow");
-			
-			$("#div1").animate({opacity:0});
-			$("#div2").animate({opacity:0});
-			$("#div1").fadeOut();
-			$("#div2").fadeOut();
-			$("#div3").fadeOut();
-			$("#div3").animate({opacity:0},function(){
+			$("#div1").animate({opacity:0});$("#div2").animate({opacity:0});$("#div3").animate({opacity:0});
+			$("#div7").animate({opacity:0});$("#div8").animate({opacity:0});
+			$("#div10").animate({opacity:0});$("#div11").animate({opacity:0});$("#div12").animate({opacity:0});
+			$("#div13").animate({opacity:0});$("#div14").animate({opacity:0});$("#div15").animate({opacity:0});
+			$("#div16").animate({opacity:0});$("#div17").animate({opacity:0});$("#div18").animate({opacity:0});
+			$("#div1").fadeOut();$("#div2").fadeOut();$("#div3").fadeOut();
+			$("#div7").fadeOut();$("#div8").fadeOut();$("#div9").fadeOut();
+			$("#div10").fadeOut();$("#div11").fadeOut();$("#div12").fadeOut();
+			$("#div13").fadeOut();$("#div14").fadeOut();$("#div15").fadeOut();
+			$("#div16").fadeOut();$("#div17").fadeOut();$("#div18").fadeOut();
+			$("#div9").animate({opacity:0},900,function(){
 			
 			$("#div4").slideToggle();
 			$("#div5").slideToggle("slow");
@@ -180,10 +375,19 @@
 			$("#div4").click(function(){
 			$(".r").slideUp("slow");
 			$(".dloc").fadeOut("slow");
+			$("#owner").fadeOut("slow");
 			$(".sundar").fadeOut("slow");
 			$(".coxs").fadeOut("slow");
+			$(".srimangal").fadeOut("slow");
 			$(".chittagong").fadeOut("slow");
 			$(".sundar").fadeOut("slow");
+			$(".rangamati").fadeOut("slow");
+			$(".martin").fadeOut("slow");
+			$(".syl").fadeOut("slow");
+			$(".son").fadeOut("slow");
+			$(".mos").fadeOut("slow");
+			$(".pah").fadeOut("slow");
+			
 			$(".sundarban,.cox,.chit,.srima,.ranga,.st,.sylhet,.sonar,.mosque,.pahar").fadeIn("slow");
 			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeOut("slow");
 			$(".loc").slideUp("slow");
@@ -201,8 +405,17 @@
 			$(".story2").slideUp("slow");
 			$(".loc").slideUp("slow");
 			$(".dloc").fadeOut("slow");
+			$("#owner").fadeOut("slow");
 			$(".sundar").fadeOut("slow");
+			$(".srimangal").fadeOut("slow");
 			$(".chittagong").fadeOut("slow");
+			$(".rangamati").fadeOut("slow");
+			$(".martin").fadeOut("slow");
+			$(".syl").fadeOut("slow");
+			$(".son").fadeOut("slow");
+			$(".mos").fadeOut("slow");
+			$(".pah").fadeOut("slow");
+			
 			$(".backBtn").fadeOut("slow");
 			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeOut("slow");
 			$(".coxs").fadeOut("slow");
@@ -213,19 +426,27 @@
 			
 			$(".r").slideToggle("slow");
 			$(".homeBtn").fadeIn("slow");
-			
+			});
 			});
 			
 			
-			});
 			
 			$("#div6").click(function(){
 			$(".story2").slideUp("slow");
 			$(".r").slideUp("slow");
+			$("#owner").fadeOut("slow");
 			$(".backBtn").fadeOut("slow");
 			$(".sundar").fadeOut("slow");
 			$(".coxs").fadeOut("slow");
+			$(".srimangal").fadeOut("slow");
 			$(".chittagong").fadeOut("slow");
+			$(".rangamati").fadeOut("slow");
+			$(".martin").fadeOut("slow");
+			$(".syl").fadeOut("slow");
+			$(".son").fadeOut("slow");
+			$(".mos").fadeOut("slow");
+			$(".pah").fadeOut("slow");
+			
 			$(".sundarban,.cox,.chit,.srima,.ranga,.st,.sylhet,.sonar,.mosque,.pahar").animate({opacity:1});
 			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeOut("slow");
 			
@@ -236,17 +457,24 @@
 			
 			$(".dloc").fadeToggle("slow");
 			$(".homeBtn").fadeIn("slow");
-			
+			});
 			});
 			
-			});
+			
 			
 			$(".homeBtn").click(function(){
-			
 			$(".story2").slideUp("fast");
 			$(".sundar").fadeOut("slow");
 			$(".coxs").fadeOut("slow");
+			$(".srimangal").fadeOut("slow");
 			$(".chittagong").fadeOut("slow");
+			$(".rangamati").fadeOut("slow");
+			$(".martin").fadeOut("slow");
+			$(".syl").fadeOut("slow");
+			$(".son").fadeOut("slow");
+			$(".mos").fadeOut("slow");
+			$(".pah").fadeOut("slow");
+			
 			$("#div4").animate({opacity:.5,marginTop:"0%"},400);
 			$("#div5").animate({opacity:.5,marginTop:"0%"},800);
 			$("#div6").animate({opacity:.5,marginTop:"0%"},1000);
@@ -255,15 +483,618 @@
 			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeIn("slow");
 			$(".dloc").fadeOut("fast");
 			$(".homeBtn").fadeOut("slow");
-			$(".backBtn").fadeIn("slow");
+			$(".backBtn").fadeIn(1000,function(){
+			$("#owner").fadeIn("slow");
+			});
+			});
 			
+			//################################### END OF RAINY ############################
+			
+			
+			
+			
+			
+			//################################### AUTUMN ############################
+
+			$(".autumn").click(function(){
+			$(".disc").slideUp("slow");
+			$("#div1").animate({opacity:0});$("#div2").animate({opacity:0});$("#div3").animate({opacity:0});
+			$("#div4").animate({opacity:0});$("#div5").animate({opacity:0},);
+			$("#div10").animate({opacity:0});$("#div11").animate({opacity:0});$("#div12").animate({opacity:0});
+			$("#div13").animate({opacity:0});$("#div14").animate({opacity:0});$("#div15").animate({opacity:0});
+			$("#div16").animate({opacity:0});$("#div17").animate({opacity:0});$("#div18").animate({opacity:0});
+			$("#div1").fadeOut();$("#div2").fadeOut();$("#div3").fadeOut();
+			$("#div4").fadeOut();$("#div5").fadeOut();$("#div6").fadeOut();
+			$("#div10").fadeOut();$("#div11").fadeOut();$("#div12").fadeOut();
+			$("#div13").fadeOut();$("#div14").fadeOut();$("#div15").fadeOut();
+			$("#div16").fadeOut();$("#div17").fadeOut();$("#div18").fadeOut();
+			$("#div6").animate({opacity:0},900,function(){
+			$("#div7").slideToggle();
+			$("#div8").slideToggle("slow");
+			$("#div9").slideToggle(1500);
+			});
+			
+			$("#div7").animate({opacity:.5});
+			$("#div8").animate({opacity:.5});
+			$("#div9").animate({opacity:.5});
 			
 			});
 			
 			
+			
+			
+			$("#div7").click(function(){
+			$(".a").slideUp("slow");
+			$(".dloc").fadeOut("slow");
+			$("#owner").fadeOut("slow");
+			$(".sundar").fadeOut("slow");
+			$(".coxs").fadeOut("slow");
+			$(".srimangal").fadeOut("slow");
+			$(".chittagong").fadeOut("slow");
+			$(".sundar").fadeOut("slow");
+			$(".rangamati").fadeOut("slow");
+			$(".martin").fadeOut("slow");
+			$(".syl").fadeOut("slow");
+			$(".son").fadeOut("slow");
+			$(".mos").fadeOut("slow");
+			$(".pah").fadeOut("slow");
+			
+			$(".sundarban,.cox,.chit,.srima,.ranga,.st,.sylhet,.sonar,.mosque,.pahar").fadeIn("slow");
+			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeOut("slow");
+			$(".loc").slideUp("slow");
+			$("#div7").animate({opacity:.8,marginTop:"-10%"},400);
+			$("#div8").animate({opacity:.5,marginTop:"-10%"},700);
+			$("#div9").animate({opacity:.5,marginTop:"-10%"},1000,function(){
+			$(".story3").slideToggle("slow");
+			$(".homeBtn").fadeIn("slow");
+			$(".backBtn").fadeOut("slow");
+			});
+			});
+			
+			
+			$("#div8").click(function(){
+			$(".story3").slideUp("slow");
+			$(".loc").slideUp("slow");
+			$("#owner").fadeOut("slow");
+			$(".dloc").fadeOut("slow");
+			$(".sundar").fadeOut("slow");
+			$(".srimangal").fadeOut("slow");
+			$(".chittagong").fadeOut("slow");
+			$(".rangamati").fadeOut("slow");
+			$(".martin").fadeOut("slow");
+			$(".syl").fadeOut("slow");
+			$(".son").fadeOut("slow");
+			$(".mos").fadeOut("slow");
+			$(".pah").fadeOut("slow");
+			
+			$(".backBtn").fadeOut("slow");
+			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeOut("slow");
+			$(".coxs").fadeOut("slow");
+			$(".sundar").fadeOut("slow");
+			$("#div7").animate({opacity:.5,marginTop:"-10%"},400);
+			$("#div8").animate({opacity:.8,marginTop:"-10%"},700);
+			$("#div9").animate({opacity:.5,marginTop:"-10%"},1000,function(){
+			
+			$(".a").slideToggle("slow");
+			$(".homeBtn").fadeIn("slow");
+			});
+			});
+			
+			
+			
+			$("#div9").click(function(){
+			$(".story3").slideUp("slow");
+			$(".a").slideUp("slow");
+			$("#owner").fadeOut("slow");
+			$(".backBtn").fadeOut("slow");
+			$(".sundar").fadeOut("slow");
+			$(".coxs").fadeOut("slow");
+			$(".srimangal").fadeOut("slow");
+			$(".chittagong").fadeOut("slow");
+			$(".rangamati").fadeOut("slow");
+			$(".martin").fadeOut("slow");
+			$(".syl").fadeOut("slow");
+			$(".son").fadeOut("slow");
+			$(".mos").fadeOut("slow");
+			$(".pah").fadeOut("slow");
+			
+			$(".sundarban,.cox,.chit,.srima,.ranga,.st,.sylhet,.sonar,.mosque,.pahar").animate({opacity:1});
+			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeOut("slow");
+			
+			$(".sundar").fadeOut("slow");
+			$("#div7").animate({opacity:.5,marginTop:"-10%"},400);
+			$("#div8").animate({opacity:.5,marginTop:"-10%"},700);
+			$("#div9").animate({opacity:.8,marginTop:"-10%"},1000,function(){
+			
+			$(".dloc").fadeToggle("slow");
+			$(".homeBtn").fadeIn("slow");
+			});
+			});
+			
+			
+			$(".homeBtn").click(function(){
+			$(".story3").slideUp("fast");
+			$(".sundar").fadeOut("slow");
+			$("#owner").fadeOut("slow");
+			$(".coxs").fadeOut("slow");
+			$(".srimangal").fadeOut("slow");
+			$(".chittagong").fadeOut("slow");
+			$(".rangamati").fadeOut("slow");
+			$(".martin").fadeOut("slow");
+			$(".syl").fadeOut("slow");
+			$(".son").fadeOut("slow");
+			$(".mos").fadeOut("slow");
+			$(".pah").fadeOut("slow");
+			
+			$("#div7").animate({opacity:.5,marginTop:"0%"},400);
+			$("#div8").animate({opacity:.5,marginTop:"0%"},800);
+			$("#div9").animate({opacity:.5,marginTop:"0%"},1000);
+			$(".a").slideUp("fast");
+			$(".sundarban,.cox,.chit,.srima,.ranga,.st,.sylhet,.sonar,.mosque,.pahar").animate({opacity:1});
+			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeIn("slow");
+			$(".dloc").fadeOut("fast");
+			$(".homeBtn").fadeOut("slow");
+			$(".backBtn").fadeIn(1000,function(){
+			$("#owner").fadeIn("slow");
+			});
+			});
+			
+			//################################### END OF AUTUMN ############################
+			
+			
+			
+			
+			//################################### LATE AUTUMN ############################
 
+			$(".lateautumn").click(function(){
+			$(".disc").slideUp("slow");
+			$("#div1").animate({opacity:0});$("#div2").animate({opacity:0});$("#div3").animate({opacity:0});
+			$("#div4").animate({opacity:0});$("#div5").animate({opacity:0},);
+			$("#div7").animate({opacity:0});$("#div8").animate({opacity:0});$("#div9").animate({opacity:0});
+			$("#div13").animate({opacity:0});$("#div14").animate({opacity:0});$("#div15").animate({opacity:0});
+			$("#div16").animate({opacity:0});$("#div17").animate({opacity:0});$("#div18").animate({opacity:0});
+			$("#div1").fadeOut();$("#div2").fadeOut();$("#div3").fadeOut();
+			$("#div4").fadeOut();$("#div5").fadeOut();$("#div6").fadeOut();
+			$("#div7").fadeOut();$("#div8").fadeOut();$("#div9").fadeOut();
+			$("#div13").fadeOut();$("#div14").fadeOut();$("#div15").fadeOut();
+			$("#div16").fadeOut();$("#div17").fadeOut();$("#div18").fadeOut();
+			
+			$("#div6").animate({opacity:0},900,function(){
+			$("#div10").slideToggle();
+			$("#div11").slideToggle("slow");
+			$("#div12").slideToggle(1500);
+			});
+			
+			$("#div10").animate({opacity:.5});
+			$("#div11").animate({opacity:.5});
+			$("#div12").animate({opacity:.5});
+			});
 			
 			
+			
+			$("#div10").click(function(){
+			$(".la").slideUp("slow");
+			$(".dloc").fadeOut("slow");
+			$("#owner").fadeOut("slow");
+			$(".sundar").fadeOut("slow");
+			$(".coxs").fadeOut("slow");
+			$(".srimangal").fadeOut("slow");
+			$(".chittagong").fadeOut("slow");
+			$(".sundar").fadeOut("slow");
+			$(".rangamati").fadeOut("slow");
+			$(".martin").fadeOut("slow");
+			$(".syl").fadeOut("slow");
+			$(".son").fadeOut("slow");
+			$(".mos").fadeOut("slow");
+			$(".pah").fadeOut("slow");
+			
+			$(".sundarban,.cox,.chit,.srima,.ranga,.st,.sylhet,.sonar,.mosque,.pahar").fadeIn("slow");
+			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeOut("slow");
+			$(".loc").slideUp("slow");
+			$("#div10").animate({opacity:.8,marginTop:"-10%"},400);
+			$("#div11").animate({opacity:.5,marginTop:"-10%"},700);
+			$("#div12").animate({opacity:.5,marginTop:"-10%"},1000,function(){
+			$(".story4").slideToggle("slow");
+			$(".homeBtn").fadeIn("slow");
+			$(".backBtn").fadeOut("slow");
+			});
+			});
+			
+			
+			
+			$("#div11").click(function(){
+			$(".story4").slideUp("slow");
+			$(".loc").slideUp("slow");
+			$("#owner").fadeOut("slow");
+			$(".dloc").fadeOut("slow");
+			$(".sundar").fadeOut("slow");
+			$(".srimangal").fadeOut("slow");
+			$(".chittagong").fadeOut("slow");
+			$(".rangamati").fadeOut("slow");
+			$(".martin").fadeOut("slow");
+			$(".syl").fadeOut("slow");
+			$(".son").fadeOut("slow");
+			$(".mos").fadeOut("slow");
+			$(".pah").fadeOut("slow");
+			
+			$(".backBtn").fadeOut("slow");
+			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeOut("slow");
+			$(".coxs").fadeOut("slow");
+			$(".sundar").fadeOut("slow");
+			$("#div10").animate({opacity:.5,marginTop:"-10%"},400);
+			$("#div11").animate({opacity:.8,marginTop:"-10%"},700);
+			$("#div12").animate({opacity:.5,marginTop:"-10%"},1000,function(){
+			
+			$(".la").slideToggle("slow");
+			$(".homeBtn").fadeIn("slow");
+			});
+			});
+			
+			
+			
+			$("#div12").click(function(){
+			$(".story4").slideUp("slow");
+			$(".la").slideUp("slow");
+			$("#owner").fadeOut("slow");
+			$(".backBtn").fadeOut("slow");
+			$(".sundar").fadeOut("slow");
+			$(".coxs").fadeOut("slow");
+			$(".srimangal").fadeOut("slow");
+			$(".chittagong").fadeOut("slow");
+			$(".rangamati").fadeOut("slow");
+			$(".martin").fadeOut("slow");
+			$(".syl").fadeOut("slow");
+			$(".son").fadeOut("slow");
+			$(".mos").fadeOut("slow");
+			$(".pah").fadeOut("slow");
+			
+			$(".sundarban,.cox,.chit,.srima,.ranga,.st,.sylhet,.sonar,.mosque,.pahar").animate({opacity:1});
+			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeOut("slow");
+			
+			$(".sundar").fadeOut("slow");
+			$("#div10").animate({opacity:.5,marginTop:"-10%"},400);
+			$("#div11").animate({opacity:.5,marginTop:"-10%"},700);
+			$("#div12").animate({opacity:.8,marginTop:"-10%"},1000,function(){
+			
+			$(".dloc").fadeToggle("slow");
+			$(".homeBtn").fadeIn("slow");
+			});
+			});
+			
+			
+			
+			$(".homeBtn").click(function(){
+			$(".story4").slideUp("fast");
+			$(".sundar").fadeOut("slow");
+			$(".coxs").fadeOut("slow");
+			$(".srimangal").fadeOut("slow");
+			$(".chittagong").fadeOut("slow");
+			$(".rangamati").fadeOut("slow");
+			$(".martin").fadeOut("slow");
+			$(".syl").fadeOut("slow");
+			$(".son").fadeOut("slow");
+			$(".mos").fadeOut("slow");
+			$(".pah").fadeOut("slow");
+			
+			$("#div10").animate({opacity:.5,marginTop:"0%"},400);
+			$("#div11").animate({opacity:.5,marginTop:"0%"},800);
+			$("#div12").animate({opacity:.5,marginTop:"0%"},1000);
+			$(".la").slideUp("fast");
+			$(".sundarban,.cox,.chit,.srima,.ranga,.st,.sylhet,.sonar,.mosque,.pahar").animate({opacity:1});
+			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeIn("slow");
+			$(".dloc").fadeOut("fast");
+			$(".homeBtn").fadeOut("slow");
+			$(".backBtn").fadeIn(1000,function(){
+			$("#owner").fadeIn("slow");
+			});
+			});
+			
+			//################################### END OF LATE AUTUMN ############################
+			
+			
+			
+			
+			
+			
+			//################################### WINTER ############################
+
+			$(".winter").click(function(){
+			$(".disc").slideUp("slow");
+			$("#div1").animate({opacity:0});$("#div2").animate({opacity:0});$("#div3").animate({opacity:0});
+			$("#div4").animate({opacity:0});$("#div5").animate({opacity:0},);
+			$("#div7").animate({opacity:0});$("#div8").animate({opacity:0});$("#div9").animate({opacity:0});
+			$("#div10").animate({opacity:0});$("#div11").animate({opacity:0});$("#div12").animate({opacity:0});
+			$("#div16").animate({opacity:0});$("#div17").animate({opacity:0});$("#div18").animate({opacity:0});
+			$("#div1").fadeOut();$("#div2").fadeOut();$("#div3").fadeOut();
+			$("#div4").fadeOut();$("#div5").fadeOut();$("#div6").fadeOut();
+			$("#div7").fadeOut();$("#div8").fadeOut();$("#div9").fadeOut();
+			$("#div10").fadeOut();$("#div11").fadeOut();$("#div12").fadeOut();
+			$("#div16").fadeOut();$("#div17").fadeOut();$("#div18").fadeOut();
+			$("#div6").animate({opacity:0},900,function(){
+			$("#div13").slideToggle();
+			$("#div14").slideToggle("slow");
+			$("#div15").slideToggle(1500);
+			});
+			
+			$("#div13").animate({opacity:.5});
+			$("#div14").animate({opacity:.5});
+			$("#div15").animate({opacity:.5});
+			
+			});
+			
+			
+			
+			$("#div13").click(function(){
+			$(".w").slideUp("slow");
+			$(".dloc").fadeOut("slow");
+			$(".sundar").fadeOut("slow");
+			$("#owner").fadeOut("slow");
+			$(".coxs").fadeOut("slow");
+			$(".srimangal").fadeOut("slow");
+			$(".chittagong").fadeOut("slow");
+			$(".sundar").fadeOut("slow");
+			$(".rangamati").fadeOut("slow");
+			$(".martin").fadeOut("slow");
+			$(".syl").fadeOut("slow");
+			$(".son").fadeOut("slow");
+			$(".mos").fadeOut("slow");
+			$(".pah").fadeOut("slow");
+			
+			$(".sundarban,.cox,.chit,.srima,.ranga,.st,.sylhet,.sonar,.mosque,.pahar").fadeIn("slow");
+			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeOut("slow");
+			$(".loc").slideUp("slow");
+			$("#div13").animate({opacity:.8,marginTop:"-10%"},400);
+			$("#div14").animate({opacity:.5,marginTop:"-10%"},700);
+			$("#div15").animate({opacity:.5,marginTop:"-10%"},1000,function(){
+			$(".story5").slideToggle("slow");
+			$(".homeBtn").fadeIn("slow");
+			$(".backBtn").fadeOut("slow");
+			});
+			});
+			
+			
+			
+			$("#div14").click(function(){
+			$(".story5").slideUp("slow");
+			$(".loc").slideUp("slow");
+			$("#owner").fadeOut("slow");
+			$(".dloc").fadeOut("slow");
+			$(".sundar").fadeOut("slow");
+			$(".srimangal").fadeOut("slow");
+			$(".chittagong").fadeOut("slow");
+			$(".rangamati").fadeOut("slow");
+			$(".martin").fadeOut("slow");
+			$(".syl").fadeOut("slow");
+			$(".son").fadeOut("slow");
+			$(".mos").fadeOut("slow");
+			$(".pah").fadeOut("slow");
+			
+			$(".backBtn").fadeOut("slow");
+			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeOut("slow");
+			$(".coxs").fadeOut("slow");
+			$(".sundar").fadeOut("slow");
+			$("#div13").animate({opacity:.5,marginTop:"-10%"},400);
+			$("#div14").animate({opacity:.8,marginTop:"-10%"},700);
+			$("#div15").animate({opacity:.5,marginTop:"-10%"},1000,function(){
+			
+			$(".w").slideToggle("slow");
+			$(".homeBtn").fadeIn("slow");
+			});
+			});
+			
+			
+			
+			$("#div15").click(function(){
+			$(".story5").slideUp("slow");
+			$(".w").slideUp("slow");
+			$("#owner").fadeOut("slow");
+			$(".backBtn").fadeOut("slow");
+			$(".sundar").fadeOut("slow");
+			$(".coxs").fadeOut("slow");
+			$(".srimangal").fadeOut("slow");
+			$(".chittagong").fadeOut("slow");
+			$(".rangamati").fadeOut("slow");
+			$(".martin").fadeOut("slow");
+			$(".syl").fadeOut("slow");
+			$(".son").fadeOut("slow");
+			$(".mos").fadeOut("slow");
+			$(".pah").fadeOut("slow");
+			
+			$(".sundarban,.cox,.chit,.srima,.ranga,.st,.sylhet,.sonar,.mosque,.pahar").animate({opacity:1});
+			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeOut("slow");
+			
+			$(".sundar").fadeOut("slow");
+			$("#div13").animate({opacity:.5,marginTop:"-10%"},400);
+			$("#div14").animate({opacity:.5,marginTop:"-10%"},700);
+			$("#div15").animate({opacity:.8,marginTop:"-10%"},1000,function(){
+			
+			$(".dloc").fadeToggle("slow");
+			$(".homeBtn").fadeIn("slow");
+			});
+			});
+			
+			
+			
+			$(".homeBtn").click(function(){
+			$(".story5").slideUp("fast");
+			$(".sundar").fadeOut("slow");
+			$(".coxs").fadeOut("slow");
+			$(".srimangal").fadeOut("slow");
+			$(".chittagong").fadeOut("slow");
+			$(".rangamati").fadeOut("slow");
+			$(".martin").fadeOut("slow");
+			$(".syl").fadeOut("slow");
+			$(".son").fadeOut("slow");
+			$(".mos").fadeOut("slow");
+			$(".pah").fadeOut("slow");
+			
+			$("#div13").animate({opacity:.5,marginTop:"0%"},400);
+			$("#div14").animate({opacity:.5,marginTop:"0%"},800);
+			$("#div15").animate({opacity:.5,marginTop:"0%"},1000);
+			$(".w").slideUp("fast");
+			$(".sundarban,.cox,.chit,.srima,.ranga,.st,.sylhet,.sonar,.mosque,.pahar").animate({opacity:1});
+			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeIn("slow");
+			$(".dloc").fadeOut("fast");
+			$(".homeBtn").fadeOut("slow");
+			$(".backBtn").fadeIn(1000,function(){
+			$("#owner").fadeIn("slow");
+			});
+			});
+			
+			//################################### END OF WINTER ############################
+			
+			
+			
+			
+			
+			
+			//################################### SPRING ############################
+
+			$(".spring").click(function(){
+			$(".disc").slideUp("slow");
+			$("#div1").animate({opacity:0});$("#div2").animate({opacity:0});$("#div3").animate({opacity:0});
+			$("#div4").animate({opacity:0});$("#div5").animate({opacity:0},);
+			$("#div7").animate({opacity:0});$("#div8").animate({opacity:0});$("#div9").animate({opacity:0});
+			$("#div10").animate({opacity:0});$("#div11").animate({opacity:0});$("#div12").animate({opacity:0});
+			$("#div13").animate({opacity:0});$("#div14").animate({opacity:0});$("#div15").animate({opacity:0});
+			$("#div1").fadeOut();$("#div2").fadeOut();$("#div3").fadeOut();
+			$("#div4").fadeOut();$("#div5").fadeOut();$("#div6").fadeOut();
+			$("#div7").fadeOut();$("#div8").fadeOut();$("#div9").fadeOut();
+			$("#div10").fadeOut();$("#div11").fadeOut();$("#div12").fadeOut();
+			$("#div13").fadeOut();$("#div14").fadeOut();$("#div15").fadeOut();
+			$("#div6").animate({opacity:0},900,function(){
+			$("#div16").slideToggle();
+			$("#div17").slideToggle("slow");
+			$("#div18").slideToggle(1500);
+			});
+			
+			$("#div16").animate({opacity:.5});
+			$("#div17").animate({opacity:.5});
+			$("#div18").animate({opacity:.5});
+			
+			});
+			
+			
+			
+			
+			$("#div16").click(function(){
+			$(".sp").slideUp("slow");
+			$(".dloc").fadeOut("slow");
+			$("#owner").fadeOut("slow");
+			$(".sundar").fadeOut("slow");
+			$(".coxs").fadeOut("slow");
+			$(".srimangal").fadeOut("slow");
+			$(".chittagong").fadeOut("slow");
+			$(".sundar").fadeOut("slow");
+			$(".rangamati").fadeOut("slow");
+			$(".martin").fadeOut("slow");
+			$(".syl").fadeOut("slow");
+			$(".son").fadeOut("slow");
+			$(".mos").fadeOut("slow");
+			$(".pah").fadeOut("slow");
+			
+			$(".sundarban,.cox,.chit,.srima,.ranga,.st,.sylhet,.sonar,.mosque,.pahar").fadeIn("slow");
+			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeOut("slow");
+			$(".loc").slideUp("slow");
+			$("#div16").animate({opacity:.8,marginTop:"-10%"},400);
+			$("#div17").animate({opacity:.5,marginTop:"-10%"},700);
+			$("#div18").animate({opacity:.5,marginTop:"-10%"},1000,function(){
+			$(".story6").slideToggle("slow");
+			$(".homeBtn").fadeIn("slow");
+			$(".backBtn").fadeOut("slow");
+			});
+			});
+			
+			
+			
+			$("#div17").click(function(){
+			$(".story6").slideUp("slow");
+			$(".loc").slideUp("slow");
+			$("#owner").fadeOut("slow");
+			$(".dloc").fadeOut("slow");
+			$(".sundar").fadeOut("slow");
+			$(".srimangal").fadeOut("slow");
+			$(".chittagong").fadeOut("slow");
+			$(".rangamati").fadeOut("slow");
+			$(".martin").fadeOut("slow");
+			$(".syl").fadeOut("slow");
+			$(".son").fadeOut("slow");
+			$(".mos").fadeOut("slow");
+			$(".pah").fadeOut("slow");
+			
+			$(".backBtn").fadeOut("slow");
+			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeOut("slow");
+			$(".coxs").fadeOut("slow");
+			$(".sundar").fadeOut("slow");
+			$("#div16").animate({opacity:.5,marginTop:"-10%"},400);
+			$("#div17").animate({opacity:.8,marginTop:"-10%"},700);
+			$("#div18").animate({opacity:.5,marginTop:"-10%"},1000,function(){
+			
+			$(".sp").slideToggle("slow");
+			$(".homeBtn").fadeIn("slow");
+			});
+			});
+			
+			
+			
+			$("#div18").click(function(){
+			$(".story6").slideUp("slow");
+			$(".sp").slideUp("slow");
+			$(".backBtn").fadeOut("slow");
+			$("#owner").fadeOut("slow");
+			$(".sundar").fadeOut("slow");
+			$(".coxs").fadeOut("slow");
+			$(".srimangal").fadeOut("slow");
+			$(".chittagong").fadeOut("slow");
+			$(".rangamati").fadeOut("slow");
+			$(".martin").fadeOut("slow");
+			$(".syl").fadeOut("slow");
+			$(".son").fadeOut("slow");
+			$(".mos").fadeOut("slow");
+			$(".pah").fadeOut("slow");
+			
+			$(".sundarban,.cox,.chit,.srima,.ranga,.st,.sylhet,.sonar,.mosque,.pahar").animate({opacity:1});
+			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeOut("slow");
+			
+			$(".sundar").fadeOut("slow");
+			$("#div16").animate({opacity:.5,marginTop:"-10%"},400);
+			$("#div17").animate({opacity:.5,marginTop:"-10%"},700);
+			$("#div18").animate({opacity:.8,marginTop:"-10%"},1000,function(){
+			
+			$(".dloc").fadeToggle("slow");
+			$(".homeBtn").fadeIn("slow");
+			});
+			});
+			
+			
+			
+			$(".homeBtn").click(function(){
+			$(".story6").slideUp("fast");
+			$(".sundar").fadeOut("slow");
+			$(".coxs").fadeOut("slow");
+			$(".srimangal").fadeOut("slow");
+			$(".chittagong").fadeOut("slow");
+			$(".rangamati").fadeOut("slow");
+			$(".martin").fadeOut("slow");
+			$(".syl").fadeOut("slow");
+			$(".son").fadeOut("slow");
+			$(".mos").fadeOut("slow");
+			$(".pah").fadeOut("slow");
+			
+			$("#div16").animate({opacity:.5,marginTop:"0%"},400);
+			$("#div17").animate({opacity:.5,marginTop:"0%"},800);
+			$("#div18").animate({opacity:.5,marginTop:"0%"},1000);
+			$(".sp").slideUp("fast");
+			$(".sundarban,.cox,.chit,.srima,.ranga,.st,.sylhet,.sonar,.mosque,.pahar").animate({opacity:1});
+			$(".summer,.rainy,.autumn,.lateautumn,.winter,.spring").fadeIn("slow");
+			$(".dloc").fadeOut("fast");
+			$(".homeBtn").fadeOut("slow");
+			$(".backBtn").fadeIn(1000,function(){
+			$("#owner").fadeIn("slow");
+			});
+			});
+			
+			//################################### END OF SPRING ############################
 			
 			
 			
@@ -278,7 +1109,7 @@
 			
 		
 								<ul>
-								<li class="homeBtn" style="display:none;position:absolute;top:18%;left:5%;"><a href="#">Home</a></li>
+								<li class="homeBtn" style="display:none;position:absolute;top:18%;left:5%;"><a href="#home">Home</a></li>
 								</ul>
 								
 			
@@ -287,12 +1118,12 @@
 			<center style="opacity:10;color:red;font-size:25px;"><br><b>Live In Peace In Nature<b></center></div>
 			<div class="box" style="background:none;height:100px;width:100%;display:none;">
 							<center><ul>
-								<li class="summer"><a href="#">Summer</a></li> &nbsp
-								<li class="rainy"><a href="#">Rainy</a></li> &nbsp
-								<li class="autumn"><a href="#">Autumn</a></li> &nbsp
-								<li class="lateautumn"><a href="#">Late Autumn</a></li> &nbsp
-								<li class="winter"><a href="#">Winter</a></li> &nbsp
-								<li class="spring"><a href="#">Spring</a></li> 
+								<li class="summer"><a href="#summer">Summer</a></li> &nbsp
+								<li class="rainy"><a href="#rainy">Rainy</a></li> &nbsp
+								<li class="autumn"><a href="#autumn">Autumn</a></li> &nbsp
+								<li class="lateautumn"><a href="#lateautumn">Late Autumn</a></li> &nbsp
+								<li class="winter"><a href="#winter">Winter</a></li> &nbsp
+								<li class="spring"><a href="#spring">Spring</a></li> 
 								<li class="backBtn" style="display:none;position:absolute;top:18%;left:90%;"><a href="index.html">Back</a></li>
 							</ul></center>
 							
@@ -310,36 +1141,64 @@
 			
 			
 			
-			<div id="div1" style="margin-left:30%;margin-right:30px;width:200px;height:200px;opacity:.6;background-color:red;display:inline;float:left;display:none;">
-			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Story</center></div> 
-			<div id="div2" style="margin-right:30px;width:200px;height:200px;opacity:.6;background-color:green;display:inline;float:left;display:none;">
+			<div id="div1" style="margin-left:30%;margin-right:30px;width:200px;height:200px;opacity:.6;background-color:#b52647;display:inline;float:left;display:none;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Summer Story</center></div> 
+			<div id="div2" style="margin-right:30px;width:200px;height:200px;opacity:.6;background-color:#9c2d7e;display:inline;float:left;display:none;">
 			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Photo</center></div>
-			<div id="div3" style="width:200px;height:200px;opacity:.6;background-color:blue;display:inline;float:left;display:none;">
+			<div id="div3" style="width:200px;height:200px;opacity:.6;background-color:#062f94;display:inline;float:left;display:none;">
 			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Location</center></div>
 			
-			
 			<div id="div4" style="margin-left:30%;margin-right:30px;width:200px;height:200px;opacity:.6;background-color:#3173de;display:inline;float:left;display:none;">
-			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Story</center></div> 
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Rainy Story</center></div> 
 			<div id="div5" style="margin-right:30px;width:200px;height:200px;opacity:.6;background-color:#a027c4;display:inline;float:left;display:none;">
 			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Photo</center></div>
 			<div id="div6" style="width:200px;height:200px;opacity:.6;background-color:#b32464;display:inline;float:left;display:none;">
 			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Location</center></div>
 			
+			<div id="div7" style="margin-left:30%;margin-right:30px;width:200px;height:200px;opacity:.6;background-color:#36afc2;display:inline;float:left;display:none;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Autumn Story</center></div> 
+			<div id="div8" style="margin-right:30px;width:200px;height:200px;opacity:.6;background-color:#0cb095;display:inline;float:left;display:none;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Photo</center></div>
+			<div id="div9" style="width:200px;height:200px;opacity:.6;background-color:#25a150;display:inline;float:left;display:none;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Location</center></div>
+			
+			<div id="div10" style="margin-left:30%;margin-right:30px;width:200px;height:200px;opacity:.6;background-color:#8be640;display:inline;float:left;display:none;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">L.Autumn Story</center></div> 
+			<div id="div11" style="margin-right:30px;width:200px;height:200px;opacity:.6;background-color:#c4f540;display:inline;float:left;display:none;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Photo</center></div>
+			<div id="div12" style="width:200px;height:200px;opacity:.6;background-color:#e3b129;display:inline;float:left;display:none;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Location</center></div>
+			
+			<div id="div13" style="margin-left:30%;margin-right:30px;width:200px;height:200px;opacity:.6;background-color:#d9725b;display:inline;float:left;display:none;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Winter Story</center></div> 
+			<div id="div14" style="margin-right:30px;width:200px;height:200px;opacity:.6;background-color:#9d51db;display:inline;float:left;display:none;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Photo</center></div>
+			<div id="div15" style="width:200px;height:200px;opacity:.6;background-color:#cf44db;display:inline;float:left;display:none;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Location</center></div>
+			
+			<div id="div16" style="margin-left:30%;margin-right:30px;width:200px;height:200px;opacity:.6;background-color:#6f0678;display:inline;float:left;display:none;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Spring Story</center></div> 
+			<div id="div17" style="margin-right:30px;width:200px;height:200px;opacity:.6;background-color:#0ba7db;display:inline;float:left;display:none;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Photo</center></div>
+			<div id="div18" style="width:200px;height:200px;opacity:.6;background-color:#abb00e;display:inline;float:left;display:none;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Location</center></div>
+			
+			
 			
 			<div class="dloc" style="background:none;height:100px;width:100%;display:none;">
 				<br> <br> <br> <br> 
 							<ul>
-								<li class="sundarban"><a href="#">Sundarban</a></li> &nbsp
-								<li class="cox"><a href="#">Cox's Bazar</a></li> &nbsp
-								<li class="chit"><a href="#">Chittagong Hill Tracts</a></li> &nbsp
-								<li class="srima"><a href="#">Srimangal</a></li> &nbsp
-								<li class="ranga"><a href="#">Rangamati</a></li> &nbsp
-								<li class="st"><a href="#">St Martin Island</a></li> &nbsp
-								<li class="sylhet"><a href="#">Sylhet</a></li> &nbsp 
-								<li class="sonar"><a href="#">Sonargaon</a></li> &nbsp
+								<li class="sundarban"><a href="#sundarban">Sundarban</a></li> &nbsp
+								<li class="cox"><a href="#cox">Cox's Bazar</a></li> &nbsp
+								<li class="chit"><a href="#chit">Chittagong Hill Tracts</a></li> &nbsp
+								<li class="srima"><a href="#srima">Srimangal</a></li> &nbsp
+								<li class="ranga"><a href="#ranga">Rangamati</a></li> &nbsp
+								<li class="st"><a href="#st">St Martin Island</a></li> &nbsp
+								<li class="sylhet"><a href="#sylhet">Sylhet</a></li> &nbsp 
+								<li class="sonar"><a href="#sonar">Sonargaon</a></li> &nbsp
 								<br> <br> <br>
-								<li class="mosque"><a href="#">Mosque City Bagerhat</a></li> &nbsp
-								<li class="pahar"><a href="#">Paharpur</a></li> 
+								<li class="mosque"><a href="#mosque">Mosque City Bagerhat</a></li> &nbsp
+								<li class="pahar"><a href="#pahar">Paharpur</a></li> 
 							</ul>
 							
 			
@@ -375,6 +1234,43 @@
 				</center>
 				
 			</div>
+			
+			
+			<div class="story3" style="margin-left:10%;margin-right:10%;margin-top:20px;width:80%;padding:10px;border: 2px solid white;color:white;display:none;">
+				<center style="font-family:Arial;font-size:15px;text-align: justify;text-justify: inter-word;">
+				After the rain comes the autumn.'BHADRA' and 'ARSHIN' are the months of the season.Rain is not so copious. The sky looks deep blue and flowers bloom
+				in this season.Days and nights are almost equal.
+				</center>
+				
+			</div>
+			
+			<div class="story4" style="margin-left:10%;margin-right:10%;margin-top:20px;width:80%;padding:10px;border: 2px solid white;color:white;display:none;">
+				<center style="font-family:Arial;font-size:15px;text-align: justify;text-justify: inter-word;">
+				The autum nolls into the late-autum.'KARTIC' and 'AGRAHAYAN' are the months of the late-autum. It is a season of dew and farmers look happy.They are 
+				busy in handvesting perform the Nabanna.
+				</center>
+				
+			</div>
+			
+			
+			<div class="story5" style="margin-left:10%;margin-right:10%;margin-top:20px;width:80%;padding:10px;border: 2px solid white;color:white;display:none;">
+				<center style="font-family:Arial;font-size:15px;text-align: justify;text-justify: inter-word;">
+				The late-autumn is following by the winter.'POUSH' and 'MAGH' are the month of winter.Winter looks gloomy. It's vary called tuen and days are shorter 
+				and nights are longer.Its season of fog.
+				</center>
+				
+			</div>
+			
+			<div class="story6" style="margin-left:10%;margin-right:10%;margin-top:20px;width:80%;padding:10px;border: 2px solid white;color:white;display:none;">
+				<center style="font-family:Arial;font-size:15px;text-align: justify;text-justify: inter-word;">
+				Spring is the best of all seasons. 'FALGOON' and 'CHAITRA' make this season.It's called the king. New leaves shoot out.Trees and plants look beautiful.
+				The flowers bloom and give us sweetsent all around.
+
+
+				</center>
+				
+			</div>
+			
 			 
 			<div class="sundar" style="margin-left:10%;margin-right:10%;margin-top:20px;width:80%;padding:10px;border: 2px solid white;color:white;display:none;">
 				<center style="font-family:Arial;font-size:15px;text-align: justify;text-justify: inter-word;">
@@ -405,6 +1301,76 @@
 				
 			</div>
 			
+			<div class="srimangal" style="margin-left:10%;margin-right:10%;margin-top:20px;width:80%;padding:10px;border: 2px solid white;color:white;display:none;">
+				<center style="font-family:Arial;font-size:15px;text-align: justify;text-justify: inter-word;">
+				Srimangal is the tea capital of Bangladesh. This hilly area, with tea estates, lemon orchards, pineapple, and rubber plantations, is one of the most 
+				picturesque and enjoyable parts of the country. For miles around, tea estates form a perennially green carpet on the sloping hills, and it is the one 
+				area (besides the Sundarbans) where it is possible to look around and not see another human being. A few days spent around its tea estates and exploring 
+				nearby villages and forests will almost certainly rank among your most treasured experiences in Bangladesh.
+				</center>
+				
+			</div>
+			
+			<div class="rangamati" style="margin-left:10%;margin-right:10%;margin-top:20px;width:80%;padding:10px;border: 2px solid white;color:white;display:none;">
+				<center style="font-family:Arial;font-size:15px;text-align: justify;text-justify: inter-word;">
+				Rangamti is a district of Chittagong Hill-Tracts area. The main reason to visit this place is the Kaptai Lake. It is a naturally beautiful man-made lake 
+				surrounded by beautiful hills. The best thing to do at Rangamati is to enjoy a boat ride on the Kaptai Lake for the whole day. Rangamati is also home to 
+				many tribal groups. You can visit their handicraft market here to buy some fine quality handmade fabrics. There is a Buddhist monastery called Rajban 
+				Bihara which is also worth visiting. Rangamati comes as number four on our list of the best places to visit in Bangladesh.
+				</center>
+				
+			</div>
+			
+			<div class="martin" style="margin-left:10%;margin-right:10%;margin-top:20px;width:80%;padding:10px;border: 2px solid white;color:white;display:none;">
+				<center style="font-family:Arial;font-size:15px;text-align: justify;text-justify: inter-word;">
+				St. Martin’s Island is a beautiful coral island of Bay of Bengal in Bangladesh. For beach lovers, this is the best place to visit in Bangladesh.
+				Local tourists go to visit this island mostly on a day trip. After they leave in the afternoon, it becomes really quiet. You can stay in any resort 
+				with a private beach, and relax on the island for a couple of days when becoming tired of traveling for several weeks in the whole country. St.
+				Martin’s Island comes as number six on our list of the best places to visit in Bangladesh.
+				</center>
+				
+			</div>
+			
+			<div class="syl" style="margin-left:10%;margin-right:10%;margin-top:20px;width:80%;padding:10px;border: 2px solid white;color:white;display:none;">
+				<center style="font-family:Arial;font-size:15px;text-align: justify;text-justify: inter-word;">
+				Sylhet is a naturally beautiful place in the north-eastern part of Bangladesh, close to the Meghalaya state of India. It has many beautiful places to visit. 
+				Green-water canal Lalakhal, stone collecting area Jaflong, Ratargul swamp forest, and many of it’s tea gardens are the attractions to visit Sylhet. 
+				You can also meet some different tribal people in Sylhet, especially in Jaflong. Here you can meet the Khasia tribal people who grow betel leaves in the forest. 
+				Sylhet comes as number eight on our list of the best places to visit in Bangladesh.
+				</center>
+				
+			</div>
+			
+			<div class="son" style="margin-left:10%;margin-right:10%;margin-top:20px;width:80%;padding:10px;border: 2px solid white;color:white;display:none;">
+				<center style="font-family:Arial;font-size:15px;text-align: justify;text-justify: inter-word;">
+				Sonargaon was the old capital of Bengal in the medieval period. It was a mint capital beside Gaur. Although gone is the heritage of the old capital, 
+				there still are some interesting things to spend a day in Sonargaon. The main attraction to visit Sonargaon would be the abandoned merchant city, Panam Nagar
+				. Built on the colonial period, this was a city of wealthy Hindu merchants to fled to India during riots after the partition in the subcontinent. They intended
+				to return someday, which never happened. Nowadays, this is a fully abandoned city of 52 houses built on a single street.
+				</center>
+				
+			</div>
+			
+			<div class="mos" style="margin-left:10%;margin-right:10%;margin-top:20px;width:80%;padding:10px;border: 2px solid white;color:white;display:none;">
+				<center style="font-family:Arial;font-size:15px;text-align: justify;text-justify: inter-word;">
+				Bagerhat is a city founded in the 15th century by a Turkish general, which was formerly known as Khalifatabad. It is full of beautiful historic mosques
+				, among which 60 Dome Mosque is the most famous. This whole city is recognized as a UNESCO world heritage site. The historic city, listed by Forbes as one
+				of the 15 lost cities of the world, has more than 50 Islamic monuments that have been found after removing the vegetation that had obscured them from view 
+				for many centuries. Bagerhat comes as number eleven on our list of the best places to visit in Bangladesh.
+				</center>
+				
+			</div>
+			
+			<div class="pah" style="margin-left:10%;margin-right:10%;margin-top:20px;width:80%;padding:10px;border: 2px solid white;color:white;display:none;">
+				<center style="font-family:Arial;font-size:15px;text-align: justify;text-justify: inter-word;">
+				In the north-western part of Bangladesh, there is a tiny little place called Paharpur, which holds the most impressive archeological site in Bangladesh 
+				called Somapuri Mahabhihara, a UNESCO world heritage site. It was the second-largest Buddhist monastery south of Himalayas in the 8th century. On its 
+				prime time, monks from all over the world used to come here for higher education. It was one of the best Buddhist monasteries in the world at that time. 
+				Paharpur comes as number five on our list of the best places to visit in Bangladesh.
+				</center>
+				
+			</div>
+			
 			
 			<br> <br> <br> <br>
 			<div style="margin-top:3%;margin-left:70px;">
@@ -423,42 +1389,42 @@
 			<img class="r" src="Photo/r5.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
 			</div>
 			
+			<div style="margin-top:3%;margin-left:70px;">
+			<img class="a" src="Photo/a1.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			<img class="a" src="Photo/a2.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			<img class="a" src="Photo/a3.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			<img class="a" src="Photo/a4.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			<img class="a" src="Photo/a5.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			</div>
 			
-
-			<!--
+			<div style="margin-top:3%;margin-left:70px;">
+			<img class="la" src="Photo/la1.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			<img class="la" src="Photo/la2.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			<img class="la" src="Photo/la3.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			<img class="la" src="Photo/la4.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			<img class="la" src="Photo/la5.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			</div>
 			
-			<div class="loc" style="margin:10%;margin-bottom:20px;width:80%;height:100px;padding:5px;border: 1px solid white;color:white;display:none;">
-				<center>Summer is the first season in Bangladesh.This season consists with two bengali months named Baishak and Jaisthow.
-				During summer season,The atmosphare remains hot and shiny.People can't do much work and become tired due to extreme heat of sun.
-				Similarly crops fields become drought for less rain.</center>
-				
+			<div style="margin-top:3%;margin-left:70px;">
+			<img class="w" src="Photo/w1.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			<img class="w" src="Photo/w2.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			<img class="w" src="Photo/w3.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			<img class="w" src="Photo/w4.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			<img class="w" src="Photo/w5.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			</div>
+			<div style="margin-top:3%;margin-left:70px;">
+			<img class="sp" src="Photo/sp1.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			<img class="sp" src="Photo/sp2.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			<img class="sp" src="Photo/sp3.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			<img class="sp" src="Photo/sp4.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
+			<img class="sp" src="Photo/sp5.jpg" style="margin-right:50px;width:200px;height:150px;color:white;display:inline;float:left;display:none;">
 			</div>
 			
 			
-			
-				<center>
-								<div  style="display:none;">
-								<ul>
-								<li class="btn">Story</li>
-								</ul>
-								</div>
-								<div class="btn" style="width:80px;height:20px;background-color:blue;display:none;opacity:.5">Photos</div> 
-								</center>
-			
-			<img class="p1" src="Photo/s1.png" style="height:100px; width:200px; display:none;"> <br>
-			<img class="p2" src="Photo/s1.png" style="height:100px; width:200px; display:none;"> <br>
-			<img class="p3" src="Photo/s1.png" style="height:100px; width:200px; display:none;"> <br>
-			<img class="p4" src="Photo/s1.png" style="height:100px; width:200px; display:none;"> 
-			
-			-->
-		
-			
-			
-			
-			
-				
-			
-			
+		<div id="owner">
+		<br> <br> <br> <br> <br> <br> <br> <br> 
+		<center>&copy; Copyright 2020 Beautiful Bangladesh by <a href="https://www.facebook.com/imranalwayz/" target="_blank" style="text-decoration: none; color:white;">Imran Hossain</a></center>	
+		</div>
 		</header>
 	</body>
 
