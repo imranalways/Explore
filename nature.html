@@ -1,12 +1,804 @@
 <html>
 	<title>Nature</title>
 	<head>
-		
+		<!--
 		<script src="jquery-3.5.1.min.js"></script>
+		-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="CSSS/nature.css">
+		
+		<script>
+		$(document).ready(function(){
+		$(".box1").animate({left:"86%"},1000);
+		$(".box2").animate({left:"71%"},1100);
+		$(".box1").animate({top:"67%"},1000);
+		$(".box2").animate({top:"67%"},1100);
+		$(".box3").animate({left:"56%"},1200);
+		$(".box4").animate({left:"41%"},1300);
+		$(".box3").animate({top:"67%"},1200);
+		$(".box4").animate({top:"67%"},1300);
+		$(".box5").animate({left:"26%"},1400);
+		$(".box5").animate({top:"67%"},1400);
+		$(".box6").animate({left:"11%"},1500)
+		$(".box6").animate({top:"67%"},1500,function(){
+		$(".box7").animate({left:"86%"},1000);
+		$(".box8").animate({left:"71%"},1100);
+		$(".box7").animate({top:"36%"},1000);
+		$(".box8").animate({top:"36%"},1100);
+		$(".box9").animate({left:"56%"},1200);
+		$(".box9").animate({top:"36%"},1200);
+		$(".box10").animate({left:"41%"},1300);
+		$(".box10").animate({top:"36%"},1300);
+		$(".box11").animate({left:"26%"},1400);
+		$(".box11").animate({top:"36%"},1400);
+		$(".box12").animate({left:"11%"},1500);
+		$(".box12").animate({top:"36%"},1500,function(){
+		$(".box13").animate({left:"86%"},1000);
+		$(".box14").animate({left:"71%"},1100);
+		$(".box13").animate({top:"5%"},1000);
+		$(".box14").animate({top:"5%"},1100);
+		$(".box15").animate({left:"56%"},1200);
+		$(".box15").animate({top:"5%"},1200);
+		$(".box16").animate({left:"41%"},1300);
+		$(".box16").animate({top:"5%"},1300);
+		$(".box17").animate({left:"26%"},1400);
+		$(".box17").animate({top:"5%"},1400);
+		$(".box18").animate({left:"11%"},1500);
+		$(".box18").animate({top:"5%"},1500,function(){
+		$(".home").slideUp("slow");
+		$(".backBtn").slideDown("slow");
+		});
+		
+		});
+		});
+		
+		$(".home").click(function(){
+		$(".home").fadeOut("slow");
+		$(".box1").fadeOut(400);
+		$(".box2").fadeOut(400);
+		$(".box3").fadeOut(400);
+		$(".box4").fadeOut(400);
+		$(".box5").fadeOut(400);
+		$(".box6").fadeOut(400);
+		$(".box7").fadeOut(400);
+		$(".box8").fadeOut(400);
+		$(".box9").fadeOut(400);
+		$(".box10").fadeOut(400);
+		$(".box11").fadeOut(400);
+		$(".box12").fadeOut(400);
+		$(".box13").fadeOut(400);
+		$(".box14").fadeOut(400);
+		$(".box15").fadeOut(400);
+		$(".box16").fadeOut(400);
+		$(".box17").fadeOut(400);
+		$(".box18").fadeOut(400);
+		
+		$(".allbox").animate({left:"-15%"},function(){
+		$(".box1").fadeIn(400);
+		$(".box2").fadeIn(500);
+		$(".box3").fadeIn(600);
+		$(".box4").fadeIn(700);
+		$(".box5").fadeIn(800);
+		$(".box6").fadeIn(900);
+		$(".box7").fadeIn(1000);
+		$(".box8").fadeIn(1100);
+		$(".box9").fadeIn(1200);
+		$(".box10").fadeIn(1300);
+		$(".box11").fadeIn(1400);
+		$(".box12").fadeIn(1500);
+		$(".box13").fadeIn(1600);
+		$(".box14").fadeIn(1700);
+		$(".box15").fadeIn(1800);
+		$(".box16").fadeIn(1900);
+		$(".box17").fadeIn(2000);
+		$(".box18").fadeIn(2100);
+		});
+		
+		$(".box1").animate({left:"86%"},1000);
+		$(".box2").animate({left:"71%"},1100);
+		$(".box1").animate({top:"67%"},1000);
+		$(".box2").animate({top:"67%"},1100);
+		$(".box3").animate({left:"56%"},1200);
+		$(".box4").animate({left:"41%"},1300);
+		$(".box3").animate({top:"67%"},1200);
+		$(".box4").animate({top:"67%"},1300);
+		$(".box5").animate({left:"26%"},1400);
+		$(".box5").animate({top:"67%"},1400);
+		$(".box6").animate({left:"11%"},1500)
+		$(".box6").animate({top:"67%"},1500);
+		$(".box7").animate({left:"86%"},1000);
+		$(".box8").animate({left:"71%"},1100);
+		$(".box7").animate({top:"36%"},1000);
+		$(".box8").animate({top:"36%"},1100);
+		$(".box9").animate({left:"56%"},1200);
+		$(".box9").animate({top:"36%"},1200);
+		$(".box10").animate({left:"41%"},1300);
+		$(".box10").animate({top:"36%"},1300);
+		$(".box11").animate({left:"26%"},1400);
+		$(".box11").animate({top:"36%"},1400);
+		$(".box12").animate({left:"11%"},1500);
+		$(".box12").animate({top:"36%"},1500);
+		$(".box13").animate({left:"86%"},1000);
+		$(".box14").animate({left:"71%"},1100);
+		$(".box13").animate({top:"5%"},1000);
+		$(".box14").animate({top:"5%"},1100);
+		$(".box15").animate({left:"56%"},1200);
+		$(".box15").animate({top:"5%"},1200);
+		$(".box16").animate({left:"41%"},1300);
+		$(".box16").animate({top:"5%"},1300);
+		$(".box17").animate({left:"26%"},1400);
+		$(".box17").animate({top:"5%"},1400);
+		$(".box18").animate({left:"11%"},1500);
+		$(".box18").animate({top:"5%"},1500);
+		$(".home").fadeOut("slow");
+
+		
+		
+		});
+		
+		
+		$(".box1").click(function(){
+		$(".box2").slideUp(400);
+		$(".box3").slideUp(500);
+		$(".box4").slideUp(600);
+		$(".box5").slideUp(700);
+		$(".box6").slideUp(800);
+		$(".box7").slideUp(900);
+		$(".box8").slideUp(1000);
+		$(".box9").slideUp(1100);
+		$(".box10").slideUp(1200);
+		$(".box11").slideUp(1300);
+		$(".box12").slideUp(1400);
+		$(".box13").slideUp(1500);
+		$(".box14").slideUp(1600);
+		$(".box15").slideUp(1700);
+		$(".box16").slideUp(1800);
+		$(".box17").slideUp(1900);
+		$(".box18").slideUp(2000,function(){
+		$(".box1").animate({left:"11%"},1000);
+		$(".box1").animate({top:"5%"},1000);
+		$(".box1").animate({opacity:0.8});
+		$(".home").slideDown("slow");
+		});
+		});
+		
+		$(".box2").click(function(){
+		$(".box1").slideUp(400);
+		$(".box3").slideUp(500);
+		$(".box4").slideUp(600);
+		$(".box5").slideUp(700);
+		$(".box6").slideUp(800);
+		$(".box7").slideUp(900);
+		$(".box8").slideUp(1000);
+		$(".box9").slideUp(1100);
+		$(".box10").slideUp(1200);
+		$(".box11").slideUp(1300);
+		$(".box12").slideUp(1400);
+		$(".box13").slideUp(1500);
+		$(".box14").slideUp(1600);
+		$(".box15").slideUp(1700);
+		$(".box16").slideUp(1800);
+		$(".box17").slideUp(1900);
+		$(".box18").slideUp(2000,function(){
+		$(".box2").animate({left:"11%"},1000);
+		$(".box2").animate({top:"5%"},1000);
+		$(".box2").animate({opacity:0.8});
+		$(".home").slideDown("slow");
+		});
+		});
+		
+		$(".box3").click(function(){
+		$(".box1").slideUp(400);
+		$(".box2").slideUp(500);
+		$(".box4").slideUp(600);
+		$(".box5").slideUp(700);
+		$(".box6").slideUp(800);
+		$(".box7").slideUp(900);
+		$(".box8").slideUp(1000);
+		$(".box9").slideUp(1100);
+		$(".box10").slideUp(1200);
+		$(".box11").slideUp(1300);
+		$(".box12").slideUp(1400);
+		$(".box13").slideUp(1500);
+		$(".box14").slideUp(1600);
+		$(".box15").slideUp(1700);
+		$(".box16").slideUp(1800);
+		$(".box17").slideUp(1900);
+		$(".box18").slideUp(2000,function(){
+		$(".box3").animate({left:"11%"},1000);
+		$(".box3").animate({top:"5%"},1000);
+		$(".box3").animate({opacity:0.8});
+		$(".home").slideDown("slow");
+		});
+		});
+		
+		$(".box4").click(function(){
+		$(".box1").slideUp(400);
+		$(".box2").slideUp(500);
+		$(".box3").slideUp(600);
+		$(".box5").slideUp(700);
+		$(".box6").slideUp(800);
+		$(".box7").slideUp(900);
+		$(".box8").slideUp(1000);
+		$(".box9").slideUp(1100);
+		$(".box10").slideUp(1200);
+		$(".box11").slideUp(1300);
+		$(".box12").slideUp(1400);
+		$(".box13").slideUp(1500);
+		$(".box14").slideUp(1600);
+		$(".box15").slideUp(1700);
+		$(".box16").slideUp(1800);
+		$(".box17").slideUp(1900);
+		$(".box18").slideUp(2000,function(){
+		$(".box4").animate({left:"11%"},1000);
+		$(".box4").animate({top:"5%"},1000);
+		$(".box4").animate({opacity:0.8});
+		$(".home").slideDown("slow");
+		});
+		});
+		
+		$(".box5").click(function(){
+		$(".box1").slideUp(400);
+		$(".box2").slideUp(500);
+		$(".box3").slideUp(600);
+		$(".box4").slideUp(700);
+		$(".box6").slideUp(800);
+		$(".box7").slideUp(900);
+		$(".box8").slideUp(1000);
+		$(".box9").slideUp(1100);
+		$(".box10").slideUp(1200);
+		$(".box11").slideUp(1300);
+		$(".box12").slideUp(1400);
+		$(".box13").slideUp(1500);
+		$(".box14").slideUp(1600);
+		$(".box15").slideUp(1700);
+		$(".box16").slideUp(1800);
+		$(".box17").slideUp(1900);
+		$(".box18").slideUp(2000,function(){
+		$(".box5").animate({left:"11%"},1000);
+		$(".box5").animate({top:"5%"},1000);
+		$(".box5").animate({opacity:0.8});
+		$(".home").slideDown("slow");
+		});
+		});
+		
+		$(".box6").click(function(){
+		$(".box1").slideUp(400);
+		$(".box2").slideUp(500);
+		$(".box3").slideUp(600);
+		$(".box4").slideUp(700);
+		$(".box5").slideUp(800);
+		$(".box7").slideUp(900);
+		$(".box8").slideUp(1000);
+		$(".box9").slideUp(1100);
+		$(".box10").slideUp(1200);
+		$(".box11").slideUp(1300);
+		$(".box12").slideUp(1400);
+		$(".box13").slideUp(1500);
+		$(".box14").slideUp(1600);
+		$(".box15").slideUp(1700);
+		$(".box16").slideUp(1800);
+		$(".box17").slideUp(1900);
+		$(".box18").slideUp(2000,function(){
+		$(".box6").animate({left:"11%"},1000);
+		$(".box6").animate({top:"5%"},1000);
+		$(".box6").animate({opacity:0.8});
+		$(".home").slideDown("slow");
+		});
+		});
+		
+		$(".box7").click(function(){
+		$(".box1").slideUp(400);
+		$(".box2").slideUp(500);
+		$(".box3").slideUp(600);
+		$(".box4").slideUp(700);
+		$(".box5").slideUp(800);
+		$(".box6").slideUp(900);
+		$(".box8").slideUp(1000);
+		$(".box9").slideUp(1100);
+		$(".box10").slideUp(1200);
+		$(".box11").slideUp(1300);
+		$(".box12").slideUp(1400);
+		$(".box13").slideUp(1500);
+		$(".box14").slideUp(1600);
+		$(".box15").slideUp(1700);
+		$(".box16").slideUp(1800);
+		$(".box17").slideUp(1900);
+		$(".box18").slideUp(2000,function(){
+		$(".box7").animate({left:"11%"},1000);
+		$(".box7").animate({top:"5%"},1000);
+		$(".box7").animate({opacity:0.8});
+		$(".home").slideDown("slow");
+		});
+		});
+		
+		$(".box8").click(function(){
+		$(".box1").slideUp(400);
+		$(".box2").slideUp(500);
+		$(".box3").slideUp(600);
+		$(".box4").slideUp(700);
+		$(".box5").slideUp(800);
+		$(".box6").slideUp(900);
+		$(".box7").slideUp(1000);
+		$(".box9").slideUp(1100);
+		$(".box10").slideUp(1200);
+		$(".box11").slideUp(1300);
+		$(".box12").slideUp(1400);
+		$(".box13").slideUp(1500);
+		$(".box14").slideUp(1600);
+		$(".box15").slideUp(1700);
+		$(".box16").slideUp(1800);
+		$(".box17").slideUp(1900);
+		$(".box18").slideUp(2000,function(){
+		$(".box8").animate({left:"11%"},1000);
+		$(".box8").animate({top:"5%"},1000);
+		$(".box8").animate({opacity:0.8});
+		$(".home").slideDown("slow");
+		});
+		});
+		
+		$(".box9").click(function(){
+		$(".box1").slideUp(400);
+		$(".box2").slideUp(500);
+		$(".box3").slideUp(600);
+		$(".box4").slideUp(700);
+		$(".box5").slideUp(800);
+		$(".box6").slideUp(900);
+		$(".box7").slideUp(1000);
+		$(".box8").slideUp(1100);
+		$(".box10").slideUp(1200);
+		$(".box11").slideUp(1300);
+		$(".box12").slideUp(1400);
+		$(".box13").slideUp(1500);
+		$(".box14").slideUp(1600);
+		$(".box15").slideUp(1700);
+		$(".box16").slideUp(1800);
+		$(".box17").slideUp(1900);
+		$(".box18").slideUp(2000,function(){
+		$(".box9").animate({left:"11%"},1000);
+		$(".box9").animate({top:"5%"},1000);
+		$(".box9").animate({opacity:0.8});
+		$(".home").slideDown("slow");
+		});
+		});
+		
+		$(".box10").click(function(){
+		$(".box1").slideUp(400);
+		$(".box2").slideUp(500);
+		$(".box3").slideUp(600);
+		$(".box4").slideUp(700);
+		$(".box5").slideUp(800);
+		$(".box6").slideUp(900);
+		$(".box7").slideUp(1000);
+		$(".box8").slideUp(1100);
+		$(".box9").slideUp(1200);
+		$(".box11").slideUp(1300);
+		$(".box12").slideUp(1400);
+		$(".box13").slideUp(1500);
+		$(".box14").slideUp(1600);
+		$(".box15").slideUp(1700);
+		$(".box16").slideUp(1800);
+		$(".box17").slideUp(1900);
+		$(".box18").slideUp(2000,function(){
+		$(".box10").animate({left:"11%"},1000);
+		$(".box10").animate({top:"5%"},1000);
+		$(".box10").animate({opacity:0.8});
+		$(".home").slideDown("slow");
+		});
+		});
+		
+		$(".box11").click(function(){
+		$(".box1").slideUp(400);
+		$(".box2").slideUp(500);
+		$(".box3").slideUp(600);
+		$(".box4").slideUp(700);
+		$(".box5").slideUp(800);
+		$(".box6").slideUp(900);
+		$(".box7").slideUp(1000);
+		$(".box8").slideUp(1100);
+		$(".box9").slideUp(1200);
+		$(".box10").slideUp(1300);
+		$(".box12").slideUp(1400);
+		$(".box13").slideUp(1500);
+		$(".box14").slideUp(1600);
+		$(".box15").slideUp(1700);
+		$(".box16").slideUp(1800);
+		$(".box17").slideUp(1900);
+		$(".box18").slideUp(2000,function(){
+		$(".box11").animate({left:"11%"},1000);
+		$(".box11").animate({top:"5%"},1000);
+		$(".box11").animate({opacity:0.8});
+		$(".home").slideDown("slow");
+		});
+		});
+		
+		$(".box12").click(function(){
+		$(".box1").slideUp(400);
+		$(".box2").slideUp(500);
+		$(".box3").slideUp(600);
+		$(".box4").slideUp(700);
+		$(".box5").slideUp(800);
+		$(".box6").slideUp(900);
+		$(".box7").slideUp(1000);
+		$(".box8").slideUp(1100);
+		$(".box9").slideUp(1200);
+		$(".box10").slideUp(1300);
+		$(".box11").slideUp(1400);
+		$(".box13").slideUp(1500);
+		$(".box14").slideUp(1600);
+		$(".box15").slideUp(1700);
+		$(".box16").slideUp(1800);
+		$(".box17").slideUp(1900);
+		$(".box18").slideUp(2000,function(){
+		$(".box12").animate({left:"11%"},1000);
+		$(".box12").animate({top:"5%"},1000);
+		$(".box12").animate({opacity:0.8});
+		$(".home").slideDown("slow");
+		});
+		});
+		
+		$(".box13").click(function(){
+		$(".box1").slideUp(400);
+		$(".box2").slideUp(500);
+		$(".box3").slideUp(600);
+		$(".box4").slideUp(700);
+		$(".box5").slideUp(800);
+		$(".box6").slideUp(900);
+		$(".box7").slideUp(1000);
+		$(".box8").slideUp(1100);
+		$(".box9").slideUp(1200);
+		$(".box10").slideUp(1300);
+		$(".box11").slideUp(1400);
+		$(".box12").slideUp(1500);
+		$(".box14").slideUp(1600);
+		$(".box15").slideUp(1700);
+		$(".box16").slideUp(1800);
+		$(".box17").slideUp(1900);
+		$(".box18").slideUp(2000,function(){
+		$(".box13").animate({left:"11%"},1000);
+		$(".box13").animate({top:"5%"},1000);
+		$(".box13").animate({opacity:0.8});
+		$(".home").slideDown("slow");
+		});
+		});
+		
+		$(".box14").click(function(){
+		$(".box1").slideUp(400);
+		$(".box2").slideUp(500);
+		$(".box3").slideUp(600);
+		$(".box4").slideUp(700);
+		$(".box5").slideUp(800);
+		$(".box6").slideUp(900);
+		$(".box7").slideUp(1000);
+		$(".box8").slideUp(1100);
+		$(".box9").slideUp(1200);
+		$(".box10").slideUp(1300);
+		$(".box11").slideUp(1400);
+		$(".box12").slideUp(1500);
+		$(".box13").slideUp(1600);
+		$(".box15").slideUp(1700);
+		$(".box16").slideUp(1800);
+		$(".box17").slideUp(1900);
+		$(".box18").slideUp(2000,function(){
+		$(".box14").animate({left:"11%"},1000);
+		$(".box14").animate({top:"5%"},1000);
+		$(".box14").animate({opacity:0.8});
+		$(".home").slideDown("slow");
+		});
+		});
+		
+		
+		$(".box15").click(function(){
+		$(".box1").slideUp(400);
+		$(".box2").slideUp(500);
+		$(".box3").slideUp(600);
+		$(".box4").slideUp(700);
+		$(".box5").slideUp(800);
+		$(".box6").slideUp(900);
+		$(".box7").slideUp(1000);
+		$(".box8").slideUp(1100);
+		$(".box9").slideUp(1200);
+		$(".box10").slideUp(1300);
+		$(".box11").slideUp(1400);
+		$(".box12").slideUp(1500);
+		$(".box13").slideUp(1600);
+		$(".box14").slideUp(1700);
+		$(".box16").slideUp(1800);
+		$(".box17").slideUp(1900);
+		$(".box18").slideUp(2000,function(){
+		$(".box15").animate({left:"11%"},1000);
+		$(".box15").animate({top:"5%"},1000);
+		$(".box15").animate({opacity:0.8});
+		$(".home").slideDown("slow");
+		});
+		});
+		
+		$(".box16").click(function(){
+		$(".box1").slideUp(400);
+		$(".box2").slideUp(500);
+		$(".box3").slideUp(600);
+		$(".box4").slideUp(700);
+		$(".box5").slideUp(800);
+		$(".box6").slideUp(900);
+		$(".box7").slideUp(1000);
+		$(".box8").slideUp(1100);
+		$(".box9").slideUp(1200);
+		$(".box10").slideUp(1300);
+		$(".box11").slideUp(1400);
+		$(".box12").slideUp(1500);
+		$(".box13").slideUp(1600);
+		$(".box14").slideUp(1700);
+		$(".box15").slideUp(1800);
+		$(".box17").slideUp(1900);
+		$(".box18").slideUp(2000,function(){
+		$(".box16").animate({left:"11%"},1000);
+		$(".box16").animate({top:"5%"},1000);
+		$(".box16").animate({opacity:0.8});
+		$(".home").slideDown("slow");
+		});
+		});
+		
+		$(".box17").click(function(){
+		$(".box1").slideUp(400);
+		$(".box2").slideUp(500);
+		$(".box3").slideUp(600);
+		$(".box4").slideUp(700);
+		$(".box5").slideUp(800);
+		$(".box6").slideUp(900);
+		$(".box7").slideUp(1000);
+		$(".box8").slideUp(1100);
+		$(".box9").slideUp(1200);
+		$(".box10").slideUp(1300);
+		$(".box11").slideUp(1400);
+		$(".box12").slideUp(1500);
+		$(".box13").slideUp(1600);
+		$(".box14").slideUp(1700);
+		$(".box15").slideUp(1800);
+		$(".box16").slideUp(1900);
+		$(".box18").slideUp(2000,function(){
+		$(".box17").animate({left:"11%"},1000);
+		$(".box17").animate({top:"5%"},1000);
+		$(".box17").animate({opacity:0.8});
+		$(".home").slideDown("slow");
+		});
+		});
+		
+		$(".box18").click(function(){
+		$(".box1").slideUp(400);
+		$(".box2").slideUp(500);
+		$(".box3").slideUp(600);
+		$(".box4").slideUp(700);
+		$(".box5").slideUp(800);
+		$(".box6").slideUp(900);
+		$(".box7").slideUp(1000);
+		$(".box8").slideUp(1100);
+		$(".box9").slideUp(1200);
+		$(".box10").slideUp(1300);
+		$(".box11").slideUp(1400);
+		$(".box12").slideUp(1500);
+		$(".box13").slideUp(1600);
+		$(".box14").slideUp(1700);
+		$(".box15").slideUp(1800);
+		$(".box16").slideUp(1900);
+		$(".box17").slideUp(2000,function(){
+		$(".box18").animate({opacity:0.8});
+		$(".home").slideDown("slow");
+		});
+		});
+		
+		
+		
+		
+		/*
+		$(".box1").hover(function(){
+            $(this).css({"opacity":0.8,"transition": ".5s ease"});
+			},
+			function(){
+               $(this).css({"opacity":0.6});
+               }
+            );
+		$(".box2").hover(function(){
+            $(this).css({"opacity":0.8,"transition": ".5s ease"});
+			},
+			function(){
+               $(this).css({"opacity":0.6});
+               }
+            );
+		$(".box3").hover(function(){
+            $(this).css({"opacity":0.8,"transition": ".5s ease"});
+			},
+			function(){
+               $(this).css({"opacity":0.6});
+               }
+            );
+		$(".box4").hover(function(){
+             $(this).css({"opacity":0.8,"transition": ".5s ease"});
+			},
+			function(){
+               $(this).css({"opacity":0.6});
+               }
+            );
+			
+		$(".box5").hover(function(){
+            $(this).css({"opacity":0.8,"transition": ".5s ease"});
+			},
+			function(){
+               $(this).css({"opacity":0.6});
+               }
+            );
+		$(".box6").hover(function(){
+             $(this).css({"opacity":0.8,"transition": ".5s ease"});
+			},
+			function(){
+               $(this).css({"opacity":0.6});
+               }
+            );
+			
+	//################################################		
+			
+		$(".box7").hover(function(){
+             $(this).css({"opacity":0.8,"transition": ".5s ease"});
+			},
+			function(){
+               $(this).css({"opacity":0.6});
+               }
+            );
+		$(".box8").hover(function(){
+             $(this).css({"opacity":0.8,"transition": ".5s ease"});
+			},
+			function(){
+               $(this).css({"opacity":0.6});
+               }
+            );
+		$(".box9").hover(function(){
+            $(this).css({"opacity":0.8,"transition": ".5s ease"});
+			},
+			function(){
+               $(this).css({"opacity":0.6});
+               }
+            );
+		$(".box10").hover(function(){
+            $(this).css({"opacity":0.8,"transition": ".5s ease"});
+			},
+			function(){
+               $(this).css({"opacity":0.6});
+               }
+            );
+		$(".box11").hover(function(){
+            $(this).css({"opacity":0.8,"transition": ".5s ease"});
+			},
+			function(){
+               $(this).css({"opacity":0.6});
+               }
+            );
+		$(".box12").hover(function(){
+             $(this).css({"opacity":0.8,"transition": ".5s ease"});
+			},
+			function(){
+               $(this).css({"opacity":0.6});
+               }
+            );
+	//################################################		
+			
+			
+		$(".box13").hover(function(){
+            $(this).css({"opacity":0.8,"transition": ".5s ease"});
+			},
+			function(){
+               $(this).css({"opacity":0.6});
+               }
+            );
+		$(".box14").hover(function(){
+             $(this).css({"opacity":0.8,"transition": ".5s ease"});
+			},
+			function(){
+               $(this).css({"opacity":0.6});
+               }
+            );
+		$(".box15").hover(function(){
+             $(this).css({"opacity":0.8,"transition": ".5s ease"});
+			},
+			function(){
+               $(this).css({"opacity":0.6});
+               }
+            );
+		$(".box16").hover(function(){
+             $(this).css({"opacity":0.8,"transition": ".5s ease"});
+			},
+			function(){
+               $(this).css({"opacity":0.6});
+               }
+            );
+			$(".box17").hover(function(){
+             $(this).css({"opacity":0.8,"transition": ".5s ease"});
+			},
+			function(){
+               $(this).css({"opacity":0.6});
+               }
+            );
+		$(".box18").hover(function(){
+             $(this).css({"opacity":0.8,"transition": ".5s ease"});
+			},
+			function(){
+               $(this).css({"opacity":0.6});
+               }
+            );
+			
+	//################################################	
+		
+		*/
+		
+		
+	
+		});
+		
+		</script>
 	</head>
 	
 	<body>
 		<header>
+		
+		
+						
+		
+	
+		
+		<div class="allbox">
+		<div class="box1" style="position:absolute;left:-15%;width:170px;height:170px;opacity:.6;background-color:#b52647;display:inline;float:left;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;color:white;">Summer</center></div>
+		<div class="box2" style="position:absolute;left:-15%;width:170px;height:170px;opacity:.6;background-color:#9c2d7e;display:inline;float:left;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Summer Story</center></div>
+		<div class="box3" style="position:absolute;left:-15%;width:170px;height:170px;opacity:.6;background-color:#b52647;display:inline;float:left;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Summer Story</center></div>
+		<div class="box4" style="position:absolute;left:-15%;width:170px;height:170px;opacity:.6;background-color:#9c2d7e;display:inline;float:left;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Summer Story</center></div>
+		<div class="box5" style="position:absolute;left:-15%;width:170px;height:170px;opacity:.6;background-color:#b52647;display:inline;float:left;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Summer Story</center></div>
+		<div class="box6" style="position:absolute;left:-15%;width:170px;height:170px;opacity:.6;background-color:#9c2d7e;display:inline;float:left;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Summer Story</center></div>
+		
+		
+		<div class="box7" style="position:absolute;left:-15%;width:170px;height:170px;opacity:.6;background-color:#9c2d7e;display:inline;float:left;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Summer Story</center></div>
+		<div class="box8" style="position:absolute;left:-15%;width:170px;height:170px;opacity:.6;background-color:#b52647;display:inline;float:left;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Summer Story</center></div>
+		<div class="box9" style="position:absolute;left:-15%;width:170px;height:170px;opacity:.6;background-color:#9c2d7e;display:inline;float:left;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Summer Story</center></div>
+		<div class="box10" style="position:absolute;left:-15%;width:170px;height:170px;opacity:.6;background-color:#b52647;display:inline;float:left;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Summer Story</center></div>
+		<div class="box11" style="position:absolute;left:-15%;width:170px;height:170px;opacity:.6;background-color:#9c2d7e;display:inline;float:left;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Summer Story</center></div>
+		<div class="box12" style="position:absolute;left:-15%;width:170px;height:170px;opacity:.6;background-color:#b52647;display:inline;float:left;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Summer Story</center></div>
+		
+		
+		<div class="box13" style="position:absolute;left:-15%;width:170px;height:170px;opacity:.6;background-color:#b52647;display:inline;float:left;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Summer Story</center></div>
+		<div class="box14" style="position:absolute;left:-15%;width:170px;height:170px;opacity:.6;background-color:#9c2d7e;display:inline;float:left;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Summer Story</center></div>
+		<div class="box15" style="position:absolute;left:-15%;width:170px;height:170px;opacity:.6;background-color:#b52647;display:inline;float:left;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Summer Story</center></div>
+		<div class="box16" style="position:absolute;left:-15%;width:170px;height:170px;opacity:.6;background-color:#9c2d7e;display:inline;float:left;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Summer Story</center></div>
+		<div class="box17" style="position:absolute;left:-15%;width:170px;height:170px;opacity:.6;background-color:#b52647;display:inline;float:left;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Summer Story</center></div>
+		<div class="box18" style="position:absolute;left:-15%;width:170px;height:170px;opacity:.6;background-color:#9c2d7e;display:inline;float:left;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;">Summer</center></div>
+		
+		<!--<div class="lsbox1" style="position:absolute;left:-15%;width:5%;height:87.5%;opacity:.6;background-color:#9c2d7e;display:inline;float:left;">
+			<center style="margin-top:45%;font-size:30px;font-family:Arial;"></center></div>
+		-->
+		</div>
+		
+		
+						<div>
+							<center>
+							<ul>
+								<li class="home" style="display:none;position:absolute;top:42%;left:1.5%;"><a href="#home">Show ALL</a></li> <br>
+								<li class="backBtn" style="display:none;position:absolute;top:50%;left:2.7%;"><a href="index.html">Back</a></li>
+							</ul>
+							</center>
+						</div>
 		
 		
 		<header>
